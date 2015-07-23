@@ -2,16 +2,45 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Les tableaux</title>
+        <title>Dimensionary | Log In</title>
         <link rel="stylesheet" href="_style/reset.css">
         <link rel="stylesheet" href="_style/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
         <meta name="description" content="">
     </head>
     <body>
 
-       
+        <main class="logIn">
+
+            <div class="log">
+               
+                <img src="_img/RexelLogo.png" alt="Logo de la société Rexel">
+                <h1 class="log__title">Dimensionary</h1>
+                
+                <form method="" action="">
+                    
+                    <input type="text" name="identifier" placeholder="Identifier">
+                    <input type="password" name="password" placeholder="Password">
+                    
+                    <a href="#">Forgotten password ? Follow me ...</a>
+                    
+                    <div class="log__language switch">
+                        
+                        <input type="radio" id="fr" name="language" checked/>
+                        <input type="radio" id="nl" name="language" />
+                        <label for="fr" class="cb-enable selected"><span>Français</span></label>
+                        <label for="nl" class="cb-disable "><span>Nederlands</span></label>
+                        
+                    </div>
+                    
+                    <button type="submit">Dimensoning</button>
+                    
+                </form>
+            </div>
+
+        </main>
     
-    <script src="_js/main.js"></script>
     <script src="_js/Jquery.js"></script>
+    <script src="_js/main.js"></script>
     </body>
 </html>
