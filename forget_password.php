@@ -22,14 +22,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
-	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
     <title>Mot de passe oublié</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="_style/style.css">
+    <link rel="stylesheet" type="text/css" href="_style/reset.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,10 +39,11 @@
     <![endif]-->
   </head>
   <body>
-	<div class="container">
+	<div class="forgotPassword">
 		<?php require_once 'templates/ads.php';?>
 		<div class="login-form">
-			<h1 class="text-center">C.S.S.H.</h1>
+		<img src="_img/RexelLogo.png" alt="Logo de la société Rexel">
+			<h1 class="text-center">Rexel Multi-Energy</h1>
 			<div class="form-header">
 				<i class="fa fa-user"></i>
 			</div>
@@ -53,19 +54,17 @@
 				</div>
 				<button class="btn btn-block bt-login" type="submit">Réinitialiser le mot de passe</button>
 			</form>
-			<div class="form-register">
-				<div>
-					<center><button class="btn btn-block bt-login" onClick="window.location='backoffice/home_utilisateurs.php'">Annuler</button>
-				</div>
+			<div class="form-register annulForgot">
+			    <button class="btn btn-block bt-login" onClick="window.location='index.php'">Annuler</button>
 			</div>
 		</div>
 	</div>
 	<!-- /container -->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
+    <script src="_js/Jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+<!--    <script src="js/bootstrap.min.js"></script>-->
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/forgetpassword.js"></script>
   </body>

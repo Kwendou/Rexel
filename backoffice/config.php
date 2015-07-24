@@ -9,8 +9,8 @@ require_once 'messages.php';
 //site specific configuration declartion
 define( 'BASE_PATH', 'http://localhost/cssh/');
 define( 'DB_HOST', 'localhost' );
-define( 'DB_USERNAME', 'root');
-define( 'DB_PASSWORD', '');
+define( 'DB_USERNAME', 'dlinkrouter');
+define( 'DB_PASSWORD', '4568');
 define( 'DB_NAME', 'user_login');
 
 function __autoload($class)

@@ -1,5 +1,5 @@
-<?php require_once 'config.php'; ?>
 <?php 
+	require_once 'config/config2.php';
 	if(!empty($_POST)){
 		try {
 			$club_obj = new Cl_Club();

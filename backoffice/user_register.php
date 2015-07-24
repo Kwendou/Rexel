@@ -1,5 +1,6 @@
-<?php require_once 'config.php'; ?>
 <?php 
+	require_once 'config/config2.php';
+
 	if(!empty($_POST)){
 		try {
 			$user_obj = new Cl_User();

@@ -7,7 +7,7 @@ $phpdate=0;
 if (isset($_GET['from']) AND isset($_GET['to']) AND isset($_GET['club']) AND isset($_GET['infra']) AND isset($_GET['kwh'])) 
 {
 		
-	require('tfpdf.php');
+	require('tFPDF.php');
 
 	class PDF extends tfpdf
 	{
@@ -65,15 +65,15 @@ if (isset($_GET['from']) AND isset($_GET['to']) AND isset($_GET['club']) AND iss
 			// Décalage à droite
 			$this->Ln(3);
 			// Logo
-			$this->Image('img/bg_slider_home.jpg',-1,0,211);
-			$this->Image('img/rexel.png',5,5,30);
-			$this->Ln(15);
+			$this->Image('img/banner_facture.png',0,0,220);
+
+			$this->Ln(14);
 			// Police Arial gras 20
 			$this->SetFont('Arial','B',20);
 			// Décalage à droite
 			$this->Cell(70);
 			// Club - responsable - facture
-			$this->Line(0,44,220,44);
+			$this->Line(0,42,220,42);
 			$this->Line(0,53,220,53);
 			// Saut de ligne
 			$this->Ln(21);
@@ -166,65 +166,18 @@ if (isset($_GET['from']) AND isset($_GET['to']) AND isset($_GET['club']) AND iss
 	$header = array('Date', 'H. début','H. fin','Index début (kWh)','Index fin (kWh)',"Conso (kWh)","Prix kWh (€)","Prix total (€)" );
 	// Chargement des données
 
-		$datefrom = $_GET['from'];
-		list($day, $month, $year) = explode("/", $datefrom);
-		$datefromen=$month."/".$day."/".$year;
-		$phpdate = strtotime($datefromen);
-		$mysqldatefrom = date( 'Y-m-d H:i:s', $phpdate );
+	$datefrom = $_GET['from'];
+	list($day, $month, $year) = explode("/", $datefrom);
+	$datefromen=$month."/".$day."/".$year;
+	$phpdate = strtotime($datefromen);
+	$mysqldatefrom = date( 'Y-m-d H:i:s', $phpdate );
 
-		$dateto = $_GET['to'];
-		list($day, $month, $year) = explode("/", $dateto);
-		$datetoen=$month."/".$day."/".$year;
-		$phpdate = strtotime($datetoen);
-		$mysqldateto = date( 'Y-m-d 23:59:99', $phpdate );
-		
-		require 'config/config.php';
-		
-		try {
-			$bdd = new PDO('mysql:host='.$config['host'].';dbname='.$config['database'], $config['username'],  $config['password']);
-		}
-		catch (Exception $e) {
-			die('Erreur : ' . $e->getMessage());
-		}
-
-
-		$query = 'SELECT `CLUB_ID` FROM `clubs` WHERE `NOM_CLUB` LIKE "'.$_GET['club'].'"';
-
-		$reponse = $bdd->query($query); 
-			
-		while ($donnees = $reponse->fetch())
-		{  	
-			$club = $donnees;
-		}	
-
-		$query = 'SELECT * FROM `sessions` WHERE `CLUB` = '.$club[0].' AND `DATEHEURELOGIN` >= "'.$mysqldatefrom.'" AND `DATEHEURELOGOUT` <= "'.$mysqldateto.'"';
-
-		$reponse = $bdd->query($query); 
-			
-		while ($donnees = $reponse->fetch())
-		{  	
-			$sessions[] = $donnees;
-		}	
-		
-		$query = 'SELECT `RESPONSABLE` FROM `clubs` WHERE `NOM_CLUB` LIKE "'.$_GET['club'].'"';
-
-		$reponse = $bdd->query($query); 
-			
-		while ($donnees = $reponse->fetch())
-		{  	
-			$coordonnee = $donnees;
-		}	
-
-		$query = 'SELECT * FROM `utilisateurs` WHERE `USER_ID` = '.$coordonnee[0];
-
-		$reponse = $bdd->query($query); 
-			
-		while ($donnees = $reponse->fetch())
-		{  	
-			$coordonnee = $donnees;
-		}
-
-
+	$dateto = $_GET['to'];
+	list($day, $month, $year) = explode("/", $dateto);
+	$datetoen=$month."/".$day."/".$year;
+	$phpdate = strtotime($datetoen);
+	$mysqldateto = date( 'Y-m-d 23:59:99', $phpdate );
+	
 	require 'config/config.php';
 	
 	try {
@@ -233,6 +186,25 @@ if (isset($_GET['from']) AND isset($_GET['to']) AND isset($_GET['club']) AND iss
 	catch (Exception $e) {
 		die('Erreur : ' . $e->getMessage());
 	}
+
+
+	$query = 'SELECT `CLUB_ID` FROM `clubs` WHERE `NOM_CLUB` LIKE "'.$_GET['club'].'"';
+
+	$reponse = $bdd->query($query); 
+		
+	while ($donnees = $reponse->fetch())
+	{  	
+		$club = $donnees;
+	}	
+
+	$query = 'SELECT * FROM `sessions` WHERE `CLUB` = '.$club[0].' AND `DATEHEURELOGIN` >= "'.$mysqldatefrom.'" AND `DATEHEURELOGOUT` <= "'.$mysqldateto.'"';
+
+	$reponse = $bdd->query($query); 
+		
+	while ($donnees = $reponse->fetch())
+	{  	
+		$sessions[] = $donnees;
+	}	
 	
 	$query = 'SELECT `RESPONSABLE` FROM `clubs` WHERE `NOM_CLUB` LIKE "'.$_GET['club'].'"';
 
@@ -252,13 +224,22 @@ if (isset($_GET['from']) AND isset($_GET['to']) AND isset($_GET['club']) AND iss
 		$coordonnee = $donnees;
 	}
 
-	require 'config/config.php';
+	$query = 'SELECT `RESPONSABLE` FROM `clubs` WHERE `NOM_CLUB` LIKE "'.$_GET['club'].'"';
 
-	try {
-		$bdd = new PDO('mysql:host='.$config['host'].';dbname='.$config['database'], $config['username'],  $config['password']);
-	}
-	catch (Exception $e) {
-		die('Erreur : ' . $e->getMessage());
+	$reponse = $bdd->query($query); 
+		
+	while ($donnees = $reponse->fetch())
+	{  	
+		$coordonnee = $donnees;
+	}	
+
+	$query = 'SELECT * FROM `utilisateurs` WHERE `USER_ID` = '.$coordonnee[0];
+
+	$reponse = $bdd->query($query); 
+		
+	while ($donnees = $reponse->fetch())
+	{  	
+		$coordonnee = $donnees;
 	}
 
 	$total=0;
@@ -393,14 +374,14 @@ if (isset($_GET['from']) AND isset($_GET['to']) AND isset($_GET['club']) AND iss
 	$pdf->Cell(70);
 	$pdf->Cell(50,11,'à verser sur le compte : '.$numcompte,0,0,'C');
 	
-	$repertoire = str_replace("\\", "/", $_SERVER['DOCUMENT_ROOT'])."cssh1/factures/";
+	$repertoire = str_replace("\\", "/", $_SERVER['DOCUMENT_ROOT'])."/cssh/factures/";
 	if (!is_dir($repertoire))
         {
                 mkdir ($repertoire,0777);
                 //echo " -=> Création du repertoire $repertoire réussi<br>";
         }
 
-	$repertoire = str_replace("\\", "/", $_SERVER['DOCUMENT_ROOT'])."cssh1/factures/".$_GET['club'];
+	$repertoire = str_replace("\\", "/", $_SERVER['DOCUMENT_ROOT'])."/cssh/factures/".$_GET['club'];
 	if (!is_dir($repertoire))
         {
                 mkdir ($repertoire,0777);

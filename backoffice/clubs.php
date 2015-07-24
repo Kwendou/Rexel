@@ -47,48 +47,51 @@
 					<div class="table-responsive">
 						<?php
 
-						require_once dirname(__FILE__) . '/config.inc.php';
-
-						// Process DB
-						// Connect to server
-						$link = mysqli_connect($db_server, $db_user, $db_password, $db_database) or die("Error " . mysqli_error($link));
-						if (!$link) {
-							echo ('Could not connect: ' . mysqli_error());
-							exit;
+						require 'config/config.php';
+		
+						try {
+							$bdd = new PDO('mysql:host='.$config['host'].';dbname='.$config['database'], $config['username'],  $config['password']);
 						}
+						catch (Exception $e) {
+						die('Erreur : ' . $e->getMessage());
+						}
+
 												
 						// Query for process data from table `process_data`
-						$query = "SELECT c.CLUB_ID,c.NOM_CLUB,u.USER_ID,u.NOM,u.PRENOM,u.EMAIL,u.ALIAS FROM `$db_database`.clubs c LEFT JOIN `$db_database`.utilisateurs u ON u.USER_ID = c.RESPONSABLE";
+						$query = "SELECT c.CLUB_ID,c.NOM_CLUB,u.USER_ID,u.NOM,u.PRENOM,u.EMAIL,u.ALIAS FROM ".$config['database'].".clubs c LEFT JOIN ".$config['database'].".utilisateurs u ON u.USER_ID = c.RESPONSABLE";
 						// Process DB query
-						$result = mysqli_query($link, $query);
 
-						if (!$result) {
-							$message  = 'Invalid query: ' . mysqli_error() . "\n";
-							echo $message;
-							exit;
+						$reponse = $bdd->query($query); 
+			
+						$resultat = $bdd->query($query) or die(print_r($bdd->errorInfo()));
+	 
+						// résultats
+						while($donnees = $resultat->fetch(PDO::FETCH_ASSOC)) {
+							$clubs[] = $donnees;
 						}
+						$resultat->closeCursor();
 
-						$query = "SELECT NOM_CLUB FROM `$db_database`.clubs";
+						$query = "SELECT NOM_CLUB FROM ".$config['database'].".clubs";
 
-						$result_clubs = mysqli_query($link, $query);
-
-						if (!$result_clubs) {
-							$message  = 'Invalid query: ' . mysqli_error() . "\n";
-							echo $message;
-							exit;
-						}
+						$reponse = $bdd->query($query); 
+			
+						while ($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
+						{  	
+							$result_clubs[] = $donnees;
+						}	
 						
-						$query = "SELECT NOM, PRENOM FROM `$db_database`.utilisateurs";
+						$query = "SELECT NOM, PRENOM FROM ".$config['database'].".utilisateurs";
 
-						$result_utils = mysqli_query($link, $query);
+						$reponse = $bdd->query($query); 
+			
+						while ($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
+						{  	
+							$result_utils[] = $donnees;
+						}	
 
-						if (!$result_utils) {
-							$message  = 'Invalid query: ' . mysqli_error() . "\n";
-							echo $message;
-							exit;
-						}
-						// Show data
-						// Print table header
+						// Afficher les données
+						// table header
+						
 						echo "
 						<form action='#'>
 							<input type='text' name='search' id='id_search' placeholder='Chercher' class='large' />
@@ -106,50 +109,47 @@
 								</tr>
 							</thead>
 							";
-						// print table data
+						// table data
 						echo "<tbody>";
-
-						while($row = mysqli_fetch_assoc($result)){
+	
+						foreach($clubs as $ligne => $value){
+							
 							echo "    <tr>";
-							foreach($row as $key => $value){
-								//echo "<td>$key</td>";
-								$champs[$key]=$value;
-							}
-							echo "<td>".$champs['NOM_CLUB']."</td>";				
-							echo "<td>".$champs['NOM']." ".$champs['PRENOM']."</td>";	
-							echo "<td>".$champs['EMAIL']."</td>";	
+							echo "<td>".$clubs[$ligne]['NOM_CLUB']."</td>";				
+							echo "<td>".$clubs[$ligne]['NOM']." ".$clubs['PRENOM']."</td>";	
+							echo "<td>".$clubs[$ligne]['EMAIL']."</td>";	
 							
 							echo '
 									<form>
-										<input type="hidden" name="action" value="' . $row['CLUB_ID'] . '">
-										<input type="hidden" name="id" value="' . $row['CLUB_ID'] . '">
-										<input type="hidden" value="' . $row['CLUB_ID'] . '">
+										<input type="hidden" name="action" value="' . $clubs[$ligne]['CLUB_ID'] . '">
+										<input type="hidden" name="id" value="' . $clubs[$ligne]['CLUB_ID'] . '">
+										<input type="hidden" value="' . $clubs[$ligne]['CLUB_ID'] . '">
 									</form>
 									<td>
-										<form name="pin' . $row['CLUB_ID'] . '" action="club_edit.php" method="post">
+										<form name="pin' . $clubs[$ligne]['CLUB_ID'] . '" action="club_edit.php" method="post">
 											<input type="hidden" name="action" value="edit">
-											<input type="hidden" name="CLUB_ID" value="' . $row['CLUB_ID'] . '">
-											<input type="hidden" name="NOM_CLUB" value="' . $row['NOM_CLUB'] . '">
-											<input type="hidden" name="USER_ID" value="' . $row['USER_ID'] . '">
-											<input type="hidden" name="NOM" value="' . $row['NOM'] . '">
-											<input type="hidden" name="PRENOM" value="' . $row['PRENOM'] . '">
-											<input type="hidden" name="EMAIL" value="' . $row['EMAIL'] . '">
-											<input type="hidden" name="utilisateur" value="' . $row['NOM'] . " ". $row['PRENOM'] .'">
-											<input type="hidden" name="ALIAS_UTILISATEUR" value="' . $row['ALIAS'] . '">
+											<input type="hidden" name="CLUB_ID" value="' . $clubs[$ligne]['CLUB_ID'] . '">
+											<input type="hidden" name="NOM_CLUB" value="' . $clubs[$ligne]['NOM_CLUB'] . '">
+											<input type="hidden" name="USER_ID" value="' . $clubs[$ligne]['USER_ID'] . '">
+											<input type="hidden" name="NOM" value="' . $clubs[$ligne]['NOM'] . '">
+											<input type="hidden" name="PRENOM" value="' . $clubs[$ligne]['PRENOM'] . '">
+											<input type="hidden" name="EMAIL" value="' . $clubs[$ligne]['EMAIL'] . '">
+											<input type="hidden" name="utilisateur" value="' . $clubs[$ligne]['NOM'] . " ". $clubs[$ligne]['PRENOM'] .'">
+											<input type="hidden" name="ALIAS_UTILISATEUR" value="' . $clubs[$ligne]['ALIAS'] . '">
 											<input type="submit" class="btn btn-success addmore" value="Edit">
 										</form>
 									</td>
 									<td>
-										<form name="pin' . $row['CLUB_ID'] . '" action="club_delete.php" method="post">
+										<form name="pin' . $clubs[$ligne]['CLUB_ID'] . '" action="club_delete.php" method="post">
 											<input type="hidden" name="action" value="edit">
-											<input type="hidden" name="CLUB_ID" value="' . $row['CLUB_ID'] . '">
-											<input type="hidden" name="NOM_CLUB" value="' . $row['NOM_CLUB'] . '">
-											<input type="hidden" name="USER_ID" value="' . $row['USER_ID'] . '">
-											<input type="hidden" name="NOM" value="' . $row['NOM'] . '">
-											<input type="hidden" name="PRENOM" value="' . $row['PRENOM'] . '">
-											<input type="hidden" name="EMAIL" value="' . $row['EMAIL'] . '">
-											<input type="hidden" name="utilisateur" value="' . $row['NOM'] . " ". $row['PRENOM'] .'">
-											<input type="hidden" name="ALIAS_UTILISATEUR" value="' . $row['ALIAS'] . '">
+											<input type="hidden" name="CLUB_ID" value="' . $clubs[$ligne]['CLUB_ID'] . '">
+											<input type="hidden" name="NOM_CLUB" value="' . $clubs[$ligne]['NOM_CLUB'] . '">
+											<input type="hidden" name="USER_ID" value="' . $clubs[$ligne]['USER_ID'] . '">
+											<input type="hidden" name="NOM" value="' . $clubs[$ligne]['NOM'] . '">
+											<input type="hidden" name="PRENOM" value="' . $clubs[$ligne]['PRENOM'] . '">
+											<input type="hidden" name="EMAIL" value="' . $clubs[$ligne]['EMAIL'] . '">
+											<input type="hidden" name="utilisateur" value="' . $clubs[$ligne]['NOM'] . " ". $clubs[$ligne]['PRENOM'] .'">
+											<input type="hidden" name="ALIAS_UTILISATEUR" value="' . $clubs[$ligne]['ALIAS'] . '">
 											<input type="submit" class="btn btn-success addmore" value="Select">
 										</form>
 									</td>
@@ -158,29 +158,27 @@
 						}
 						echo "</tbody>";
 
-						// print table footer
+						// table footer
 						echo "</table>\n";
 						?>
 						<button type="button" id="bouton_ajouter" onclick="document.location.href='club_register.php';" >+ Ajouter un club</button>
 						<br><br>
 						<?php
-						// Show data
-						// Print table header
+						// Afficher les données
+						// table header
 						echo "
 						<table>
 							<tr>
 								<th class = \"titretableau\" colspan=\"100\">Liste complète</th>
 							</tr>
 							";
-						// print table data
+						// table data
 						echo "<tr>";
 						echo "<th class=\"utils_clubs\">Util. / Club</th>";
 						$nombre_clubs=0;
-						while($row = mysqli_fetch_assoc($result_clubs)){
-							foreach($row as $key => $value){
-								echo "<th class=\"entetecolonnesD\">$value</th>";	
+						foreach($result_clubs as $ligne => $value){
+								echo "<th class=\"entetecolonnesD\">$value[NOM_CLUB]</th>";	
 								$nombre_clubs++;
-							}
 						}
 						
 						
@@ -188,15 +186,15 @@
 
 						echo "<tr>";
 
-						while($row = mysqli_fetch_assoc($result_utils)){
-							foreach($row as $key => $value){
+						foreach($result_clubs as $ligne => $club_val){
+							foreach($clubs[$ligne] as $key => $value){
 								if ($key=="NOM") {
-									$nom = $row['NOM']." ".$row['PRENOM'];
+									$nom = $clubs[$ligne]['NOM']." ".$clubs[$ligne]['PRENOM'];
 									echo "<td class=\"entetecolonnesA\">$nom</td>";	
 									for ($i=0;$i<$nombre_clubs;$i++) {
 										echo '
 											<td>
-												<form action="toto.php" method="get"> 
+												<form action="tableau_club_utilisateur.php" method="get"> 
 													<select id="type_util" name="type_user" class="type_util" required >
 														<option value="aucun" class="option_centre">-</option>
 														<option value="responsable" class="option_centre">Responsable</option>
@@ -211,13 +209,10 @@
 						}
 						echo "</tr>";
 
-						// print table footer
+						// table footer
 						echo "</table>\n";
 
-						// free result
-						mysqli_free_result($result);
 						?>
-						<!-- <button type="button" id="bouton_ajouter" onclick="document.location.href='register.php';" >+ Ajouter un club</button> -->
 
 					</div>
 				</div>

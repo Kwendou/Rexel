@@ -7,7 +7,7 @@ $(document).ready(function(){
 			email : {
 				required : true,
 				email: true,
-				remote:"check-email.php"
+				remote:"../check-email.php"
 			}
 		},
 		messages : {

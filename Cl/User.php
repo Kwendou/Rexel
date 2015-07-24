@@ -335,7 +335,7 @@ echo "</pre>";
 				throw new Exception( FIELDS_MISSING );
 			}
 			//$password = $this->randomPassword();
-			$password = "CSSH";
+			$password = "REXEL";
 			$password1 = md5( $password );
 			$query = "UPDATE utilisateurs SET PASSWORD = '$password1' WHERE EMAIL = '$email'";
 			if(mysqli_query($this->_con, $query)){

@@ -1,6 +1,5 @@
-<?php require_once 'config.php'; ?>
 <?php 
-	$page = "home_utilisateurs.php";
+	require_once 'config/config2.php';
 
 	if(!empty($_POST)){
 		$id = $_POST['ID'];

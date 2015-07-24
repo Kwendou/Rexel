@@ -52,7 +52,7 @@ echo "</pre>";
 					                   
                     <div class="log__language switch">
                         
-                        <input type="radio" id="fr" name="language" checked/>
+                        <input type="radio" id="fr" name="language" />
                         <input type="radio" id="nl" name="language" />
                         <label for="fr" class="cb-enable selected"><span>Français</span></label>
                         <label for="nl" class="cb-disable "><span>Nederlands</span></label>

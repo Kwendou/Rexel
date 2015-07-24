@@ -1,8 +1,9 @@
-<?php require_once 'config.php'; ?>
 <?php 
 	// On récupère les informations de connection à  notre base de données dans le tableau (array) $database
-	require 'config/config.php';
-	include 'functions/database.fn.php';	
+	require 'config/config2.php';
+
+	include 'functions/database.fn.php';
+	
 	$db_database = $config['database'];	
 
 	$bdd = getPDOLink($config);
@@ -27,7 +28,6 @@
 echo "<pre>";
 print_r($_POST);
 echo "</pre>";
-*/
 
 
 	$query = "SELECT `USER_ID`,`NOM`,`PRENOM`,`ALIAS`,`RUE`,`NUMERO`,`CODE_POSTAL`,`LOCALITE`,`PAYS`,`TELEPHONE`,`GSM`,`EMAIL`

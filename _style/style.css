@@ -14,7 +14,7 @@ main {
 /*LOGIN PAGE */
 /*LOGIN PAGE */
 
-.logIn {
+.logIn, .forgotPassword {
      background: url(../_img/rexel.png);
      height: 100vh;
      background-repeat: no-repeat;
@@ -22,7 +22,7 @@ main {
      font-family: "Dosis", sans-serif;
  }
 
-.log {
+.log, .login-form {
     width: 500px;
     position: fixed;
     top: 50%;
@@ -34,7 +34,7 @@ main {
     border-radius: 0px 15px;
 }
 
-.log__title {
+.log__title, .forgotPassword .text-center {
     font-family: "Dosis";
     font-weight: 500;
     font-size: 33px;
@@ -44,12 +44,12 @@ main {
     margin-top: 20px;
 }
 
-.log form {
+.log form, .login-form form {
     width: 302px;
     margin: 0 auto;
 }
 
-.log input[type=email], .log input[type=password] {
+.log input[type=email], .log input[type=password], .forgotPassword input[type=email] {
     background: #fff;
     border: 1px solid #979797;
     box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
@@ -65,7 +65,7 @@ main {
     outline: none;
 }
 
-.log input[name=email] {
+.log input[name=email], .forgotPassword input[type=email] {
     margin-top: 50px;
     background: #fff;
     background-image: url("../_img/id.svg");
@@ -146,7 +146,7 @@ main {
     display: none; 
 }
 
-.log button {
+.log button, .login-form button {
     margin-top: 30px;
     margin-bottom: 50px;
     background: #FF8627;
@@ -162,8 +162,17 @@ main {
     line-height: 17px;
 }
 
-.log button:hover {
+.log button:hover, .login-form button:hover {
     background: transparent;
+}
+
+.annulForgot {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.annulForgot button {
+    margin-top: 0;
 }
 
 
