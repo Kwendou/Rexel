@@ -74,7 +74,6 @@ main {
 
 .log input[name=password] {
     margin-top: 20px;
-    margin-bottom: 9px;
     background: #fff;
     background-image: url("../_img/password.svg");
     background-repeat: no-repeat;
@@ -89,6 +88,7 @@ main {
 
 .log__language {
     margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 .switch label span {
@@ -147,7 +147,7 @@ main {
 }
 
 .log button {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
     background: #FF8627;
     border-radius: 6px;
