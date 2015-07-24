@@ -1,4 +1,20 @@
- .logIn {
+/*GENERAL*/
+/*GENERAL*/
+/*GENERAL*/
+/*GENERAL*/
+
+main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/*LOGIN PAGE */
+/*LOGIN PAGE */
+/*LOGIN PAGE */
+/*LOGIN PAGE */
+
+.logIn {
      background: url(../_img/rexel.png);
      height: 100vh;
      background-repeat: no-repeat;
@@ -139,7 +155,8 @@
     height: 36px;
     border: 1px solid #FF8627;
     outline: none;
-    font-family: Dosis-ExtraBold;
+    font-family: "Dosis", sans-serif;
+    font-weight: 800;
     font-size: 14px;
     color: #0B0B0B;
     line-height: 17px;
@@ -148,5 +165,32 @@
 .log button:hover {
     background: transparent;
 }
+
+
+
+/*HOME*/
+/*HOME*/
+/*HOME*/
+/*HOME*/
+
+.home {
+    background: url(../_img/rexel.png);
+    height: 100vh;
+    background-size: 100%;
+    background-position: 0px -40%;
+    background-repeat: no-repeat;
+    font-family: "Dosis", sans-serif;
+ }
+
+.container {
+    height: 90%;
+    width: 100%;
+    background: #fff;
+}
+
+
+
+
+
 
 
