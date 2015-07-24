@@ -1,0 +1,1442 @@
+*:focus{ outline:none;}
+
+html, body {height:100%;width:100%;margin:0;padding:0;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}  
+.clear {clear:both;}
+
+body {font-family: 'Dosis', sans-serif;	font-size: 1.2em; -webkit-text-size-adjust: 1.2em; -ms-text-size-adjust: 1.2em; color:#2c2c2c;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+}
+
+input, textarea, select {font-family: 'Dosis', sans-serif;	font-size: 0.875em;}
+a {color:inherit; text-decoration:none}
+strong, b {font-weight:700}
+em, i {font-style:italic}
+
+
+/* POP UP NL */
+div#popupie {width:350px;; position:fixed; left:50%; margin-left:-175px; top:50%; background:#FFF; z-index:9999; padding:40px; -moz-box-shadow: 0px 0px 10px #000000; -webkit-box-shadow: 0px 0px 10px #000000; box-shadow: 0px 0px 10px #000000; line-height:24px; margin-top:-100px}
+div#popupie a {color:#fc6f03; text-decoration:underline}
+div.closepopupie {position:absolute; top:10px; right:10px; font-family:Verdana, Geneva, sans-serif; cursor:pointer}
+div#maskage {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); -moz-opacity: 0.5; -khtml-opacity: 0.5; opacity: 0.5; background:#333; position:fixed; z-index:9998; width:100%; height:4000px; margin-top:-500px}
+/* POP UP NL */
+
+
+/* HEADER */
+header {border-top:solid 0.500em #4d4747; border-bottom:solid 1px #3198cc; background:url(../_img/stripes.png); position:relative}
+div#blocLogin{background:#3198cc; color:#FFF; padding:0.625em; font-size:0.750em; text-transform:uppercase; text-align:center; position:relative}
+div#utilisateur, div#deconnexion{font-weight:700;display:inline; padding:0 1em}
+div#deconnexion {border-left: solid 1px #FFF}
+div#bienvenue{font-size:0.8em; color:#3198cc; text-align:center; margin:0.625em auto}
+div#bienvenue > strong{font-size:0.95; display:block}
+div#blocProjets{text-align:center; color:#c6c5c5; text-transform:uppercase; color:#2c2c2c;}
+div#prospects, div#projets{font-weight:700; padding:0.3em 1em; font-size:0.750em}
+div#prospects {border-left: solid 1px #FFF}
+div#bttMenu {cursor:pointer; text-align:center; margin:5% 1%; width:99%; }
+div#bttMenu span {padding:2% 4%; background:#3198cc; color:#FFF; display:inline-block}
+/*nav#nav-wrap ul {text-align:center}*/
+nav#nav-wrap li {display:inline-block; font-size:1.1em; width:85%; padding:0.500em 7.5%; border:solid 1px #3198cc; border-left:0; border-right:0;}
+nav#nav-wrap li strong{color:#756d6d; font-size:1.1em}
+nav#nav-wrap li:last-child {border:none}
+nav#nav-wrap li+li {border-top:none}
+nav#nav-wrap li a {text-decoration:none; display:block; width: 100%;}
+div.txtMenu, div.thumbMenu {float:left;}
+div.txtMenu {text-align:left; width:85%}
+div.thumbMenu {margin-right:0.5em}
+nav#nav-wrap {display:none; -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; position: relative; z-index: 999;}
+
+
+/*div#userWrapper nav#nav-wrap ul {text-align:center}*/
+nav#nav-wrap ul {border-top:solid 1px #dddddd}
+div#userWrapper nav#nav-wrap li {display:inline-block; font-size:1.1em; width:85%; padding:0.500em 7.5%; border:solid 1px #3198cc; border-left:0; border-right:0; position:relative}
+div#userWrapper nav#nav-wrap li strong{color:#756d6d; font-size:1.3em}
+div#userWrapper nav#nav-wrap li:last-child {border:none}
+div#userWrapper nav#nav-wrap li+li {border-top:none}
+div#userWrapper nav#nav-wrap li a {text-decoration:none; display:block; width: 100%;}
+
+div#userWrapper nav#nav-wrap li > div.ssMenu { text-align:left; display:none; overflow:hidden;}
+div#userWrapper nav#nav-wrap li > div.ssMenu > div.wrapperssMenu div+div {border-top:solid 1px #f3ae4f; margin-top:0.5em; padding-top:0.5em}
+div#userWrapper nav#nav-wrap li > div.ssMenu a {color:#FFF}
+div#userWrapper nav#nav-wrap li > div.ssMenu a:hover {color:#fbedd9}
+/*div#userWrapper nav#nav-wrap li:hover > div.ssMenu {display:none}*/
+div.arrowssMenu {display:none}
+div.wrapperssMenu {background:#ee8b03; color:#FFF; padding:0.5em; margin-top:0.5em}
+
+div#lang{font-size:0.875em; color:#3198cc; top:auto; position:absolute; left:auto; right:1em; bottom:-2em}
+/* HEADER */
+
+
+/* FOOTER */
+footer {background:#4d4747; color:#FFF; padding:0 0 3% 0; font-size:0.725em}
+div#footerWrapper{position:relative}
+div#footerWrapper > a.more{background:#79777c; text-transform:uppercase; width:98%; text-align:center; display:block; padding:2% 1%; font-size:0.813em; font-weight:700}
+nav#navBottom{text-align:center; padding:2% 0}
+/*nav#navBottom > a{display:inline-block; }*/
+div#social{width:100%; text-align:center; /*padding:2% 0*/ text-transform:uppercase}
+div#rexel{width:100%; text-align:center; padding:2% 0}
+a.facebook, a.twitter, a.rexel{position:relative; bottom:-0.313em; margin-left:0.313em}
+/* FOOTER */
+
+
+/* CONTENT */
+div#bluePart {background: #3198cc; color: #FFF;}
+div.bluePartWrapper {padding:5%; line-height:1.1em; position:relative}
+div.bluePartWrapper h1 {font-size:1.380em; font-weight:700; margin-bottom:4%; line-height:1.2em}
+div.bluePartWrapper p {font-size:0.865em}
+div.imgbluePart {display:none}
+div.enteteform {text-align:center; color:#756d6d; font-size:1.500em; padding:5% 0}
+div.enteteresultat {text-align:center; color:#756d6d; font-size:1em; padding:4% 0 2% 0}
+div.enteteresultat img {margin-top:0.5em}
+/* LIST */
+	ul#list {padding:2%}
+	ul#list > li {width:100%; font-size:0.713em; margin:2.5% 0 5% 0}
+	div.thumbList {width:100%; outline:solid 1px #dbdbdb; line-height:0; margin-bottom:1%; position:relative; overflow: hidden; max-height:210px}
+	div.vid {position:absolute; top:50%; left:50%; margin-top:-1.563em; margin-left:-1.563em}
+	div.thumbList img {width:100%; height:auto}
+	div.textList {line-height:1.6em}
+	ul#list > li h2 {font-size:1.875em; font-weight:700; color:#3198cc; margin-bottom:3%; text-transform:uppercase}
+	div.textListCont > h3 {font-size:1.388em; font-weight:700;}
+	 a div.textListCont  h3 {color:#000}
+	div.textListCont > p {font-size:1.2em}
+	div.textListCont > span.more {color:#3198cc; display:block; margin-top:1.5%}
+	div.dateList {color:#3198cc; margin-bottom:1%; font-size:1.2em}
+		/* NAV */
+		div#navigation {margin:3% 0 6% 0; text-align:center}
+		div#navigation ul {list-style-type:none; text-align:center; border-bottom:solid 1px #3198cc; border-top:solid 1px #3198cc; padding:2% 5%; display:inline-block}
+		div#navigation li {display:inline-block; width:2.125em; height:2.125em; line-height:2.000em; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; color:#4d4747; font-weight:600; font-size:0.875em}
+		div#navigation li a {text-decoration:none; color:inherit; display:block; width:2.125em; height:2.125em}
+		div#navigation li.active {color:#FFF; background:#3198cc}
+		div#navigation li.start, div#navigation li.end, div#navigation li.next, div#navigation li.previous {border:none; margin:0}
+		/* NAV */
+/* LIST */
+
+/* FORM */
+div.etape, div.estimation, div.valorisation, div.emissions, div.arbres, div.confirmation  {width:90%; margin:2%; color:#FFF; padding:3%}
+div.informations, div.informations.creation {background:#48b4ea}
+div.informations.creation+div.informations.creation {background:#38a0d4}
+div.informations > div.select > select, div.informations.creation > div.select > select {padding:1.4% 2%; color:#8e8888; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border:none; width:100%; margin:1.5% 0; background:#FFF}
+div.informations > a, div.informations.creation > a {background: #ffffff url(../_img/bg_btn_ins2.png) no-repeat right center; color:#3198cc; display:inline-block; height:25px; line-height:25px; padding: 0 30px 0 2%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin:5% auto 0 auto; text-transform:uppercase; font-size:0.675em; font-weight:700; white-space:nowrap}
+div.titreEtape {font-size:1.1em; margin-bottom:0.5em}
+div.description {background:#38a0d4}
+div.input {position:relative}
+div.input > span {font-size:0.875em; display:inline-block; position:absolute; right:10px;top:14px; color:#3198cc}
+
+div.input > span > sup {font-size:0.5em}
+div.input > input {width:96%; padding:0 2%; color:#8e8888; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border:none; margin:1.5% 0; height: 35px;}
+form#formInstallateur label{font-size:0.875em; font-weight:700; color:#FFF}
+form#formInstallateur label span {font-weight:normal; display:inline-block; margin-left:0.5em}
+
+div.description div.input > input {width:85%; padding:0 13% 0 2%;}
+div.description div.input.surface > input {width:86%; padding:0 12% 0 2%;}
+div.materiel div.input > input {width:84%; padding:0 14% 0 2%;}
+
+div.resultat {width:96%; padding:2%; background: #207faf; color:#FFFFFF; margin-bottom:2%; font-weight:700; background:#2594cc}
+div.resultat > div {text-align:right;}
+div.resultat > div+div {margin-top:1%}
+div.resultat div.input {margin-left:1%}
+div.resultat div.input > input {text-align:center; color:#2594cc; font-weight:700}
+
+div.demande {width:92%; padding:0 2%; background: #207faf; margin:0 2% 2% 2%}
+div.demande > div.titreEtape {color:#FFF; padding-top:2%; margin-bottom:0em}
+div.demande div.input {float:left; width:49%; margin:1% 0}
+div.demande div.input.right {margin-left:2%}
+div.demande div.input.right > select {padding: 0 2%; color: #8e8888; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: none; margin: 1.5% 0; height: 35px; width:100%}
+
+/*div.complement div.input > input {width:77%; padding:0 21% 0 2%;}*/
+div.complement div.input > input {width:24%; padding:0 21% 0 2%; float:right}
+div.estimation div.input > input, div.div.confirmation div.input > input {width:84%; padding:0 14% 0 2%;}
+div.valorisation div.input > input {width:90%; padding:0 8% 0 2%;}
+div.emissions div.input > input {width:77%; padding:0 21% 0 2%;}
+div.arbres div.input > input {width:84%; padding:0 14% 0 2%;}
+div.div.confirmation div.input > input, div.estimation div.input > input, div.div.confirmation div.input > input, div.valorisation div.input > input, div.emissions div.input > input, div.arbres div.input > input, div.estimation div.input > span, div.valorisation div.input > span, div.emissions div.input > span, div.arbres div.input > span, div.div.confirmation div.input > span {font-weight:700}
+div.estimation div.input > span, div.estimation div.input > input, div.confirmation div.input > span, div.confirmation div.input > input {color:#fa9702}
+div.valorisation div.input > span, div.valorisation div.input > input {color:#ff6d24}
+div.emissions div.input > span, div.emissions div.input > input {color:#42bb42}
+div.arbres div.input > span, div.arbres div.input > input {color:#58db58}
+
+div.materiel {background:#2594cc}
+div.materiel > div.select > select {padding:1.4% 2%; color:#8e8888; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border:none; margin:1.5% 0; background:#FFF; width: 100%;}
+div.complement {background:#207faf}
+div.complement > div.select > select {padding:1.4% 2%; color:#8e8888; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border:none; margin:1.5% 0; background:#FFF; width: 100%;}
+div.estimation , div.confirmation{background:#fa9702}
+div.estimation.fonce {background:#ff6d24}
+div.valorisation {background:#ff6d24}
+div.warnbValorisation {color:#8e8888; font-size:0.700em; width:90%; margin:0 2% 2% 2%; padding:0 3% 3% 3%}
+div.emissions {background:#42bb42}
+div.arbres {background:#58db58} 
+ 
+div.generer, div.financement, div.fiscalite, div.garantieRexel, div.aideFiscalite, div.financementDevis {margin:2%}
+div.financement img , div.fiscalite img, div.garantieRexel img, div.aideFiscalite img, div.financementDevis img {float:left; margin-right:5%; width:15%; height:auto}
+
+/*div.generer > button {background: #57abd5; background: -moz-linear-gradient(top,  #57abd5 0%, #287ca6 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#57abd5), color-stop(100%,#287ca6)); background: -webkit-linear-gradient(top,  #57abd5 0%,#287ca6 100%); background: -o-linear-gradient(top,  #57abd5 0%,#287ca6 100%); background: -ms-linear-gradient(top,  #57abd5 0%,#287ca6 100%); background: linear-gradient(to bottom,  #57abd5 0%,#287ca6 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57abd5', endColorstr='#287ca6',GradientType=0 ); color:#FFF; line-height:1.475em; padding:7%; width:82%; display:block; border:none;}*/
+
+div.generer {text-align:center}
+div.generer > button {font-family: 'Dosis', sans-serif; background: #ffffff url(../_img/bg_btn_ins.png) no-repeat right center; color: #ff6d24; line-height: 25px; padding: 0.5% 30px 0.5% 5%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.875em; font-weight: 700; display: inline; float: right; border: none; cursor: pointer; margin-top:0.5em; -moz-box-shadow: 0px 0px 5px #cccccc; -webkit-box-shadow: 0px 0px 5px #cccccc; box-shadow: 0px 0px 5px #cccccc; white-space: nowrap;}
+
+div.boutonbleu > a, div.boutonbleuLeft > a {font-family: 'Dosis', sans-serif; background: #ffffff url(../_img/bg_btn_ins2.png) no-repeat right center; color: #3198cc; line-height: 25px; padding: 0.2% 30px 0.2% 1%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.875em; font-weight: 700; display: inline;  border: none; cursor: pointer; margin-top:0.5em; -moz-box-shadow: 0px 0px 5px #cccccc; -webkit-box-shadow: 0px 0px 5px #cccccc; box-shadow: 0px 0px 5px #cccccc; white-space: nowrap; margin:1em 0; display:inline-block}
+div.boutonbleu > a, div.boutonbleuRight {float:right}
+div.boutonbleu > a, div.boutonbleuRight > a {font-family: 'Dosis', sans-serif; background: #ffffff url(../_img/bg_btn_ins2.png) no-repeat right center; color: #3198cc; line-height: 25px; padding: 0.2% 30px 0.2% 10%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.875em; font-weight: 700; display: inline;  border: none; cursor: pointer; /*margin-top:0.5em;*/-moz-box-shadow: 0px 0px 5px #cccccc; -webkit-box-shadow: 0px 0px 5px #cccccc; box-shadow: 0px 0px 5px #cccccc; white-space: nowrap; margin: 0 0 1em 0;; display:inline-block}
+
+div.boutonbleu.center > a {float:none; padding:0.2% 30px 0.2% 2%; margin-top:1em}
+
+div.boutonbleuLeft > a {float:left; padding: 0.2% 30px 0.2% 1%}
+
+div.send > button {font-family: 'Dosis', sans-serif; background: #ffffff url(../_img/bg_btn_ins.png) no-repeat right center; color: #ff6d24; line-height: 25px; padding: 0.5% 30px 0.5% 1%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.875em; font-weight: 700; display: inline; border: none; cursor: pointer; margin-top:0.5em; -moz-box-shadow: 0px 0px 5px #cccccc; -webkit-box-shadow: 0px 0px 5px #cccccc; box-shadow: 0px 0px 5px #cccccc; white-space: nowrap;float: right; /* position: absolute; bottom:1.7%; right:1.7%;*/}
+
+div.send > a.validateur {font-family: 'Dosis', sans-serif; background: #ffffff url(../_img/bg_btn_ins.png) no-repeat right center; color: #ff6d24; line-height: 25px; padding: 0.5% 30px 0.5% 1%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.875em; font-weight: 700; display: inline; border: none; cursor: pointer; margin-top:0.5em; -moz-box-shadow: 0px 0px 5px #cccccc; -webkit-box-shadow: 0px 0px 5px #cccccc; box-shadow: 0px 0px 5px #cccccc; white-space: nowrap; right:1.7%; float:right}
+
+div.error {text-align: center; color: #656060; padding: 2%; margin-bottom:15px}
+
+/*div.generer > img {margin-right:-1em}*/
+
+p.txtentete {text-align: center; color: #656060;}
+p.mentions {font-size:0.8em}
+
+div#continue {text-align:center; margin:0 0 1em 0}
+div#continue > button {font-family: 'Dosis', sans-serif; background: #ffffff url(../_img/bg_btn_ins.png) no-repeat right center; color: #ff6d24; line-height: 25px; padding: 0 30px 0 1%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.875em; font-weight: 700; display: inline; border: none; cursor: pointer; margin-top:0.5em; -moz-box-shadow: 0px 0px 5px #cccccc; -webkit-box-shadow: 0px 0px 5px #cccccc; box-shadow: 0px 0px 5px #cccccc;}
+
+div.generer > button > strong {font-weight:600}
+div.generer > button > img {float:right}
+div.financement, div.fiscalite, div.garantieRexel, div.aideFiscalite, div.financementDevis {background: #e8eff4; background: -moz-linear-gradient(top, #e8eff4 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8eff4), color-stop(100%,#ffffff)); background: -webkit-linear-gradient(top,  #e8eff4 0%,#ffffff 100%); background: -o-linear-gradient(top, #e8eff4 0%,#ffffff 100%); background: -ms-linear-gradient(top,  #e8eff4 0%,#ffffff 100%); background: linear-gradient(to bottom,  #e8eff4 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eff4', endColorstr='#ffffff',GradientType=0 );width:90%; padding:3%;}
+div.financement > a strong, div.fiscalite > a strong, div.garantieRexel > a strong, div.aideFiscalite > a strong, div.financementDevis > a strong {font-size:1.2em; color:#1180b8; display:block; margin-bottom:3%}
+
+div.financement > a p strong, div.fiscalite > a p strong, div.garantieRexel > a p strong, div.aideFiscalite > a p strong, div.financementDevis > a p strong {font-size: inherit; color: inherit; display: inline; margin-bottom:0}
+
+div.financement p, div.fiscalite p, div.garantieRexel p, div.aideFiscalite p, div.financementDevis p {font-size:0.875em; line-height:1.2em; color:#5f5c62}
+div.txtfi {float:left; width:80%}
+
+div.confirmation {position:relative}
+div.confirmation strong {margin-left:75px; display:inline-block;}
+label.over {display:block; background:#FFF url(../_img/ouinon.png) center right; width:80px; height:20px; position:absolute; cursor:pointer; width:68px; height:23px; top:50%; margin-top:-11px; -webkit-transition: all .3s ease-in; -moz-transition: all .3s ease-in; -o-transition: all .3s ease-in; transition: all .3s ease-in;}
+label.over.ok {background:#FFF url(../_img/ouinon.png) center left}
+div.cacheCheckbox {position:absolute; background: url(../_img/cacheCheckbox.png); width:68px; height:23px}
+
+
+label.coherence_over {display:inline-block; width:30px; height:30px; background:url(../_img/pasok.png);position:relative;margin-bottom:-0.2em;margin-left:0.2em;}
+label.coherence_over.ok { background:url(../_img/ok.png)}
+input[type="checkbox"]#coherence {visibility:hidden; position:absolute; left:-9999999999999999999999px}
+
+div.confirmation > input[type="checkbox"] {visibility:hidden; position:absolute; left:-99999999999px}
+
+
+label.labelConf {float:left}
+
+div#configurateur {margin:.0875em 0; width:100%}
+div#configurateur span {position:relative; display:block; float:left; margin:1% 2% 0 0 }
+
+div.confirmation > a, div.confirmation > button {background: #ffffff url(../_img/bg_btn_ins.png) no-repeat right center; color: #ff6d24; height: 25px; line-height: 25px; padding: 0 35px 0 2%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius:5px;  margin: 5px auto 0 auto; text-transform: uppercase; font-size: 1em; font-weight: 700; float:right; border:none; font-family: 'Dosis', sans-serif; cursor:pointer}
+button.btnOrange{	background: url(../_img/bg_btn_ins.png) no-repeat right;color: #ff6d24;line-height: 1em;padding: 0.5% 30px 0.5% 2%;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;text-transform: uppercase;font-size: 0.785em;font-weight: 700;display: inline;border: none;font-family: 'Dosis', sans-serif;-moz-box-shadow: 0px 0px 5px #cccccc;-webkit-box-shadow: 0px 0px 5px #cccccc;box-shadow: 0px 0px 5px #cccccc;cursor:pointer}
+div#contentPage div#contentTxt  div#contentfull  ul li {margin-bottom:1em}
+.chapeau{font-weight:700;font-size: 1.3em;color: #ee8b03;}
+/* FORM */
+
+/* PROSPECTS / CLIENTS */
+div#nouveauxProspects {color:#1a1a1a; line-height:1.4em; padding:2%; margin-top:1.1em}
+div#nouveauxProspects ul li {background:#e8e8e8; margin-bottom:3%; padding:3%}
+div.blocDevisProspects {font-size:0.85em; float:left; width:70%}
+div.nomProspect {color:#3198cc; font-weight:600; font-size:1.2em}
+div.mailProspect {background:#FFF; padding:1% 0.5em; display:inline-block; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin-top:1%}
+div.contactProspects {font-weight:700; font-size:0.775em; float:right; width:30%}
+div.coordonneesProspects {width:70%; float:left}
+div.dateProspect {color:#3198cc;}
+div.joursRestants {color:#FFF; background:#3198cc; width:30px; height:30px; line-height:30px; text-align:center; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; margin:6% 0}
+div.joursRestants.rouge {background:#ff2400}
+div.statutProspect {font-weight:600; color:#FFF; background:#3198cc; font-size:0.773em; display:inline-block; padding:1% 0.5em; margin-top:6%}
+div#nouveauxProspects h2, div#clients h2 {color:#3198cc; margin-bottom:5%; padding-bottom:3%; background:url(../_img/borderh.gif) no-repeat bottom left; text-transform:uppercase}
+div#installateurs h2 {color:#ff6d24; margin-bottom:5%; padding-bottom:3%; background:url(../_img/bordero.gif) no-repeat bottom left}
+div#nouveauxProspects h2 strong, div#clients h2 strong, div#installateurs h2 strong {font-weight:700}
+div#clients {color:#1a1a1a; line-height:1.4em; padding:2%}
+
+div#textBottomSuivi {text-align:center; margin-bottom:1.5em; line-height:1.2em; color:#6f6b6b}
+div#textBottomSuivi img {width:auto; height:auto; max-width:75px}
+
+div#installateurs {color:#1a1a1a; line-height:1.4em; padding:0 2% 2% 2%}
+div#clients ul li, div#installateurs ul li {background:#e8e8e8; margin-bottom:3%; padding:3%}
+
+
+div#clients ul li+li.ssBlock {margin-top:0}
+div#clients ul li.ssBlock {margin-top: 1%; padding:0}
+div#clients ul li.ssBlock div.dateClient {background:#ec8d23;width:5%; display: table-cell; padding:0; text-align:center; vertical-align:middle}
+div#clients ul li.ssBlock div.contactClient {width:85.4%;padding: 1.5%; display: table-cell; vertical-align:middle}
+div#clients ul li.ssBlock div.sppClient.cxl {width:5%;background:none; display: table-cell; padding:0 20px; text-align:center; vertical-align:middle}
+div#clients ul li.ssBlock div.sppClient.del {width:5%; display: table-cell; padding:0; text-align:center; vertical-align:middle; background:none}
+
+div#installateurs ul li+li.blockEcrire {margin-top:-3%}
+
+div.dateClient {font-size:0.85em; font-weight:600; color:#FFF; background:#3198cc; padding:1% 0 1% 3%; width:103%; margin:-3% 0 0 -3%}
+div.BlueBar {font-size:0.85em; font-weight:600; color:#FFF; background:#3198cc; padding:1% 0 1% 3%; width:103%; margin:-3% 0 0 -3%}
+div.coordClient, div.coordClientSuivi {font-size:0.85em;}
+div.nomClient {color:#3198cc; font-weight:600; font-size:1.2em; margin-top:2%}
+div.contactClient, div.dateOuverture, div.statutClient.dossier {font-size:0.85em;}
+div.telClient {float:left}
+div.mailClient {background:#FFF; padding:1% 0.5em; display:inline-block; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin-top:1%; float:right; margin-top:-1.5em}
+div.statutClient { border-top: solid 1px #d1d1d1; margin-top:3%; padding-top:1%}
+div#clients ul li div.statutClient > ul > li {text-transform:uppercase}
+div#clients ul li div.statutClient > ul > li.a-venir {color:#ababab}
+div.statutClient > ul {text-align:center}
+div#clients ul li  div.statutClient > ul > li {display:inline-block; width:18%; color:#3198cc; font-size:0.6550em; line-height:1.2em; font-weight:600; padding:0}
+
+div.statutAccepte, div.statutRefuse, div.statutEncours {margin-top:0.2em}
+div.statutAccepte img, div.statutRefuse img, div.statutEncours img {display:block; float:left;}
+div.statutAccepte span, div.statutRefuse span, div.statutEncours span {display:block; float:left; text-align:left; padding-left:5%; font-weight:700}
+
+div.statutAccepte span {color:#3198cc; margin-top:0.2em; text-transform:uppercase}
+div.statutRefuse span {color:#6f6b6b; margin-top:0.2em; text-transform:uppercase}
+div.statutEncours span {color:#aba9a9; text-transform:uppercase}
+
+div.sppClient {color:#FFF; background:#757575; padding:1% 0 1% 3%; width:103%; margin:0 0 -3% -3%; text-align:center}
+div.blueDate {color:#3198cc; padding:1% 0 1% 3%; width:103%; margin:0 0 -3% -3%; text-align:left; font-size:0.85em}
+div.sppClient > a {display:block}
+div#ajoutClients, div#newClients{font-size:0.785em;color:#757575; margin-bottom:3%}
+div#demanderDevis {font-size:0.785em;color:#757575; margin-bottom:3%}
+div#chercherInstall {font-size:0.785em;color:#757575; margin-bottom:3%}
+div#ajoutClients strong, div#newClients strong, div#demanderDevis strong, div#chercherInstall strong {float:left; display:block}
+div#ajoutClients a {background: #f8f8f8 url(../_img/bg_btn_ins2.png) no-repeat right center; color: #3198cc; line-height: 25px; padding: 0.5% 30px 0.5% 2%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;  text-transform: uppercase; font-size: 0.875em; font-weight: 700; display:inline; float:right; -moz-box-shadow: 0px 0px 5px #cccccc; -webkit-box-shadow: 0px 0px 5px #cccccc; box-shadow: 0px 0px 5px #cccccc; white-space:nowrap}
+div#demanderDevis a, div#chercherInstall a, div#demanderDevis a {-moz-box-shadow: 0px 0px 5px #cccccc; -webkit-box-shadow: 0px 0px 5px #cccccc; box-shadow: 0px 0px 5px #cccccc;}
+div#demanderDevis a, div#chercherInstall a, div#demanderDevis a, div#chercherInstall button {background: #ffffff url(../_img/bg_btn_ins.png) no-repeat right center; color: #ff6d24; line-height: 25px; padding: 0.5% 30px 0.5% 2%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;  text-transform: uppercase; font-size: 0.875em; font-weight: 700; display:inline; float:right; border:none; cursor:pointer; font-family: 'Dosis'; white-space:nowrap}
+div#chercherInstall button {padding: 2% 30px 0.5% 8%}
+ div#chercherInstall a {font-size:1.225em}
+ul+div#demanderDevis {margin-top:2em}
+
+
+button.validImprim {background: #f8f8f8 url(../_img/bg_btn_ins2.png) no-repeat right center; color: #3198cc; line-height: 25px; padding: 0.5% 30px 0.5% 2%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;  text-transform: uppercase; font-size: 0.875em; font-weight: 700; display:inline; border:none; font-family: 'Dosis'; white-space:nowrap; cursor:pointer; text-transform:uppercase}
+
+div#clients.ficheClient div.statutFicheClient > ul li {background:none; font-size:0.675em; font-weight:700; color:#3198cc; text-align: center; display:inline-block; width:auto; margin-right:1%; height:60px;}
+div#clients.ficheClient div.statutFicheClient > ul li.a-venir {color:#aaaaaa}
+div#clients.ficheClient div.statutFicheClient > div.date p{color:#FFF; background:#3198cc; padding:0 2%; font-size:0.775em; display:inline-block; float:left; margin:0.5em 1.5em 0 0 }
+
+div#clients.ficheClient a.tousclients {background: #f8f8f8 url(../_img/bg_btn_ins2.png) no-repeat right center; color: #3198cc; line-height: 25px; padding: 0% 30px 0% 1%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.675em; font-weight: 700; display: inline; float: right}
+
+/* PROSPECTS / CLIENTS */
+
+
+/* HOME */
+div.titresHome h2 {color:#3198cc; margin-bottom:5%; padding-bottom:3%; background:url(../_img/borderh.gif) no-repeat bottom left; text-transform:uppercase}
+div.titresHome h2 strong {font-weight:700}
+div#dernieresNews, div#formationsLigne {color: #1a1a1a; line-height: 1.4em; padding: 2%; margin-top: 1.1em;}
+div#dernieresNews > ul li+li {margin-top:5%}
+div#dernieresNews div.textList {color:#4d4747; font-size: 0.825em; line-height:1.2em}
+div#dernieresNews div.themeListHome {background:#3198cc; color:#FFF; display:inline-block; font-size:0.813em; font-weight:700; padding:0 2%; text-transform:uppercase}
+div#dernieresNews div.textListHome > h3 {font-weight:700}
+div#dernieresNews a.readMore {color:#3198cc; text-transform:uppercase; font-size:0.805em; float:right}
+div#pubHome {padding: 5%; margin:2%; outline:solid 1px #f0eff1}
+div#pubHome a.readMore {color: #3198cc; text-transform: uppercase; font-size: 0.805em; float: right; margin-top:0.5em}
+div#pubHome img {width:100%; height:auto}
+div.titrepubHome {color:#3f7ba5; font-weight:700; font-size:1.1em; margin-bottom:4%}
+div.titrepubHomeTop {color:#ed8600; font-weight:700; font-size:1.15em; margin-bottom:4%; text-transform:uppercase; text-align:center}
+div.textpubHomeTop {color:#1e4070; font-size:1em; line-height:1.2em}
+div.textpubHome {color: #1e4070; font-size: 0.875em; line-height: 1.2em;}
+div#formationsLigne {margin-bottom:5%}
+div#formationsLigne div.textList {color:#4d4747; font-size: 0.825em; line-height:1.4em}
+div#formationsLigne div.themeListHome {background:#3198cc; color:#FFF; display:inline-block; font-size:0.813em; font-weight:700; padding:0 2%}
+div#formationsLigne div.textListHome > h3 {font-weight:700}
+div#formationsLigne > ul li+li {margin-top:5%}
+div#formationsLigne a.readMore {color:#3198cc; text-transform:uppercase; font-size:0.805em; float:right}
+
+div#simulez a {background: #ffffff url(../_img/bg_btn_ins.png) no-repeat right center; color: #ff6d24; height: 25px; line-height: 25px; padding: 0.5% 35px 0.5% 2%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.675em; font-weight: 700; position:relative; display:inline-block; margin-top:1em}
+div#simulez div.bubble {background:#ed8600; color:#FFF; padding:4%; text-align:center; margin-top:-1px}
+div#simulez div.bubble strong {font-weight:700; font-size:1.288em; display:inline-block; margin-right:2%; position:relative; top:-0.2em}
+div#simulez img {display:none}
+aside {padding:2%}
+aside div#nouveauxProspectsHome {padding:2%}
+aside div#nouveauxProspectsHome > ul > li {padding:2% 0; font-size:0.775em; line-height:1.2em; border-bottom: solid 1px #d1d1d1;}
+aside div#nouveauxProspectsHome > ul > li span {color:#3198cc; font-weight:700}
+aside div#projetsHome {padding:2%; position:relative}
+aside div#projetsHome > ul > li {padding:2% 0; font-size:0.775em; line-height:1.2em; border-bottom: solid 1px #d1d1d1;}
+aside div#projetsHome > ul > li span {color:#3198cc; font-weight:700}
+aside div.titreAside {color:#ed8600; font-size:1.2em; margin-bottom:0.1em}
+aside div.titreAside > strong {font-size:1.25em}
+aside a.readMore {display:block; color:#ed8600; margin:0.6em 0 0.2em 0; text-transform:uppercase; font-size:0.675em; text-align:right}
+aside div.statutClient {border-top:none}
+aside div.statutClient > ul {text-align:center}
+aside div.statutClient > ul > li {display: inline-block; width: 23%; color: #3198cc; font-size: 0.785em; line-height: 1.2em; font-weight: 600; padding: 0; text-transform:uppercase}
+aside div.statutClient > ul > li.a-venir {color:#ababab}
+div#netstore {background-color:#f58320; color:#FFF; font-weight:700; font-size:0.785em; padding:2%; line-height:1.4em; text-align:center}
+div#netstore div.thumbNetstore {border-right:solid 1px #FFF; padding-right:5%; margin-right:5%; display:inline-block}
+div#netstore div.textNetstore {text-align:left; display:inline-block;}
+div.ombreDroite, div.ombreGauche {display:none}
+
+div#homeSlider{display:none;}
+
+/* HOME */
+
+/* LOGIN */
+div.accrocheLogin {text-align:center; font-size:1.1em; line-height:1em; display:none}
+div#blocConnect {background:#44b0e7; padding:1% 3%; width:80%; margin:2% auto; text-align:center; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; text-align:left;}
+div#blocConnect strong {text-align:center;display: block; font-size:0.875; margin:2% 0}
+div#blocConnect input[type="text"], div#blocConnect input[type="password"] {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border:none; -moz-box-shadow: 1px 1px 5px #3b99c8; -webkit-box-shadow: 1px 1px 5px #3b99c8; box-shadow: 1px 1px 5px #3b99c8; width:79%; padding:1.5% 3%; color:#8e8888}
+div#blocConnect button {width:15%; border:none; text-align:right; color:#FFF; font-weight:700; font-family: 'Dosis', sans-serif; background:#44b0e7; font-size:0.875em; cursor:pointer}
+div.inputLog {margin:3% 0;}
+a.lostPass {font-size:0.675em; margin-bottom:2%; width:86%; display:inline-block; text-align:right}
+div.inputsConnect {display:inline-block; width: 96%; padding-left:4%}
+div#rejoignez {display:none}
+
+/* LOGIN */
+div#loginSliderWrapper{display:none; }
+div#navEtapes{display:none; }
+/* CONTENT */
+
+/* FICHE CLIENT */
+div#ficheClientRight, div#ficheClientLeft  { margin:2%; padding:2%; font-size:0.875em; line-height:1.4em} 
+div#ficheClientLeft {background:#3198cc; color:#FFF;}
+div#ficheMail span, div#ficheTel span {margin-right:0.5em; display:inline-block; width:18px; text-align:center}
+div#ficheClientRight {background:#e8e8e8;}
+div#ficheClientRight > strong {}
+div#ficheClientRight > p+p {margin-top:1em}
+div.ficheTitle {font-size:1.875em; margin-bottom:0.63em}
+div#ficheClientRight > div.ficheTitle {color:#3198cc}
+div.ficheType {margin-bottom:0.675em}
+div#ficheComment {margin-top:0.5em}
+/* FICHE CLIENT */
+
+div#orangePart {padding:2% 2% 4% 2%; color:#FFF; background:#fa9702; text-align:center;}
+div.enteteOffre {font-size:1.35em; margin-bottom:0.5em}
+div#orangePart ul {text-align: inherit;}
+div#orangePart li {margin:4% 0 0 0}
+div#orangePart span {display:inline-block; background:#FFF; color:#fa9702; width:1.4em; height:1.4em; line-height:1.4em; font-weight:bold; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; margin-bottom:0.5em}
+
+div#blocPartenaire {color:#6f6b6b; padding:4% 0; margin:0 4%}
+
+div#blocPartenaire div.imgLeft {display:none; width:35%}
+div#blocPartenaire div.imgLeft img {width:100%; height:auto}
+div#blocPartenaire div.imgLeft.nl img {max-width:100%; width:auto; height:auto}
+div#blocPartenaire div.blkRight {float:right; width:100%}
+
+div#blocPartenaire div.blkRight p.firstp {margin-top:40px}
+div#blocPartenaire div.blkRight p+p, div#blocPartenaire p+p {margin-top:20px}
+
+div#blocPartenaire div.logoPartenaire {display:block}
+div#blocPartenaire div.logoPartenaire.left {float:left; margin:0 15px 0 0}
+div#blocPartenaire span {display:inline-block; background:#48b4ea; color:#FFFFFF; width:1.4em; height:1.4em; line-height:1.4em; font-weight:bold; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; text-align:center; margin-right:0.5em}
+div#blocPartenaire li+li {margin-top:0.5em}
+div.selection {color:#3198cc; font-weight:700; font-size:1.4em; margin-bottom:1em}
+
+div#blocBtt {padding:0 0 4% 0; text-align:right}
+a.bttBleu {color:#FFF;  background:#3198cc; font-size:0.775em; font-weight:600; padding:1% 1% 2% 1%; margin-bottom:1em; display: inline-block;}
+a.bttBleu img {position:relative; margin:0 0.4em -0.4em 0.4em;}
+
+div#iframe {margin-top: 1.5%;}
+
+div.blockLeft, div.blockright {color:#FFF; line-height:1.2em}
+div.blockLeft strong, div.blockright strong {font-size:1.2em}
+div.blockright strong {margin-bottom:0.5em; display:inline-block}
+div.blockLeft, div.blockRightPartenaire {padding:5%; margin-bottom:1em}
+div.blockRightPartenaire span {font-size:0.8em}
+div.imgBtt {float:right; margin-left:1%; width:15%}
+div.imgBtt img {width:100%; height:auto}
+div.blockLeft {background:#207faf}
+div.blockright {}
+div.blockRightPartenaire.bleu {background:#3198cc}
+div.blockRightPartenaire.orange {background:#fa9702}
+div.txtblok {float:left; width:84%}
+div#offreWrapper {margin-bottom:2em}
+
+/* ------------- USER  ------------- */
+div#userWrapper div#bluePart {background:#ee8b03; text-align:center}
+div#userWrapper div#bluePart h1 {margin:0}
+div#userWrapper div#bluePart h1 span {font-size: 1.575em; line-height:34px}
+div#userWrapper div#bluePart h1 span+br+span {font-size: 1em;}
+div#userWrapper header {border-bottom: solid 1px #FFF;}
+div#logoSolar {text-align:center; padding:4% 0}
+div#userWrapper div.dateList, ul#list.actusListe div.textList > a {color:#ff6d24}
+div#userWrapper div.thumbList {position:relative}
+div#userWrapper div.thumbList div.themeActu {position:absolute; background:#ff6d24; color:#FFF; line-height: normal; padding:0.51% 3%; top:10%; right:0; font-size:0.875em; text-transform:uppercase}
+ul#list.actusListe {margin-bottom:1em; overflow:auto}
+
+div#sidebarList {position:relative; padding:2%}
+div#sidebarList li {background:#ff6d24}
+div.plusActu {font-weight:700; font-size:1.2em; color:#656060; margin-bottom:1em}
+div#sidebarList li {background:#ff6d24; padding:2% 4%; text-transform:uppercase}
+div#sidebarList li+li {margin-top:0.6em}
+div#sidebarList li a {color:#FFF; font-weight:600; display:block}
+
+div#userWrapper ul#list.actusListe div.textListCont > a {color:#ff6d24}
+div#userWrapper li.formationUne div.themeActu {background:#ff6d24; color:#FFF; line-height: normal; padding:0.51% 3%; font-size:0.875em; display:inline-block; text-transform:uppercase;}
+
+div#content.listMargin {padding-top:4%}
+div#content.listMargin h1 {margin-left:1%}
+
+a.allActus {color: #ff6d24; text-transform:uppercase; font-size:0.75em; display:block; float:right; margin-top:1em; white-space:nowrap}
+div.plusActu, div#sidebarList ul{display:none}
+
+div#contentActu {padding:2%; font-size:0.9em; line-height:1.3em}
+div#contentActu p {margin-bottom:1em}
+div#contentActu h1 {color:#ee8b03; font-weight:700; font-size:1.5em; margin-bottom:0.75em}
+div#contentActu h2 {color:#ee8b03; font-weight:700; text-transform:uppercase}
+div#contentActu div.imgactu img {margin:1em 0; max-width:50%; height:auto; float:none}
+div#contentActu img {margin:1em; max-width:50%; height:auto; float:left}
+div#contentActu div.themeActu {background: #ff6d24; color: #FFF; line-height: normal; padding: 0.51% 1.5%; font-size: 0.8em; display: inline-block; margin-right:1em; text-transform:uppercase; white-space:nowrap}
+div#contentActu div.dateList {color: #ff6d24; font-size: 0.875em; display: inline-block;}
+
+div#contentHomePart {padding:2%; font-size:0.9em; line-height:1.3em; text-align:center;color:#6f6b6b}
+div#contentHomePart p {margin-bottom:1em}
+div#contentHomePart ul{width:100%}
+div#contentHomePart ul li{width:45%; vertical-align:top; display:inline-block}
+div#contentHomePart ul li .img{height:140px; vertical-align:middle; display:inline-block}
+div#contentHomePart h1 {color:#ee8b03; font-weight:700; font-size:1.3em; margin-bottom:0.75em}
+div#contentHomePart h2 {color:#ee8b03; font-weight:700; text-transform:uppercase}
+div#contentHomePart img {margin:1em 0; max-width:100%; height:auto}
+div#contentHomePart div.themeActu {background: #ff6d24; color: #FFF; line-height: normal; padding: 0.51% 1.5%; font-size: 0.675em; display: inline-block; margin-right:1em}
+div#contentHomePart div.dateList {color: #ff6d24; font-size: 0.875em; display: inline-block;}
+
+div#quizz {margin-top:15px}
+
+div.hoverIco span, div.blocIco span {text-decoration:underline}
+div.blocIco, div.hoverIco {transition:all 0.3s ease-out; -webkit-transition:all 0.3s ease-out; -webkit-transition:all 0.3s ease-out;}
+div.blocIco {height:220px}
+div.hoverIco {height:220px; display:none; font-size:0.875em; line-height:1.5em}
+div#contentHomePart ul li:hover {cursor:pointer}
+
+#content .encart{float:left;  width: 100%; /* margin:0 5% 5% 5%; */ padding:4%; color:#FFF; box-sizing:border-box; -moz-box-sizing:border-box;}
+#content .encart > h2{font-weight:bold; font-size:1.5em;}
+#content .encart > p{font-size:0.8em;}
+#content .encart > h2 + p {margin:2% 0}
+#content .encart button{cursor:pointer;border:none; background: none; color:#FFF; font-family:'Dosis', sans-serif;	font-size: 1em; font-weight:bold; margin:0; float:right;}
+#content .encart input[type="text"] {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border:none; -moz-box-shadow: 1px 1px 5px #3b99c8; -webkit-box-shadow: 1px 1px 5px #3b99c8; box-shadow: 1px 1px 5px #3b99c8; width:70%; padding:1.5% 3%; color:#8e8888}
+
+#content .encart.installateur{background:#3198cc url(../_img/bg_rechercher.png) no-repeat; background-position:94% 70%;}
+#content .encart.demandeDevis{background:#fc6f03 url(../_img/bg_demandeDevis.png) no-repeat; background-position:94% 50%; transition:background-color 0.3s ease-out; -webkit-transition:background-color 0.3s ease-out; -webkit-transition:background-color 0.3s ease-out; cursor:pointer;}
+#content .encart.demandeDevis:hover{background-color:#f6aa19}
+
+div#homeFooter{width:100%; background:url(../_img/homefooter.jpg) repeat-x top center;}
+div#homeFooter .wrapper{ width:100%; padding:0%; box-sizing:border-box;-moz-box-sizing:border-box; color:#6f6b6b; overflow:hidden;}
+ul#homeFooterList {padding:2%}
+	ul#homeFooterList > li {width:100%; font-size:0.713em; margin:2.5% 0 2.5% 0; display:block;}
+	ul#homeFooterList div.thumbList {width:100%; outline:solid 1px #dbdbdb; line-height:0; margin-bottom:1%; margin-right:2%; position:relative; }
+	ul#homeFooterList div.vid {position:absolute; top:50%; left:50%; margin-top:-1.563em; margin-left:-1.563em}
+	ul#homeFooterList div.thumbList > img {width:100%; height:auto}
+	ul#homeFooterList div.textList {line-height:1.3em;margin-left: 0;}
+	ul#homeFooterList > li h2 {font-size:1.875em; font-weight:700; color:#3198cc; margin-bottom:3%; text-transform:uppercase}
+	ul#homeFooterList div.textListCont > h3 {font-size:1.1em; font-weight:700}
+	ul#homeFooterList div.textListCont > p {font-size:1.2em}
+	ul#homeFooterList div.textListCont > a {color:#3198cc; display:block; margin-top:1.5%}
+	ul#homeFooterList div.dateList {color:#3198cc; margin-bottom:1%; font-size:1.2em}
+div#homeFooter div.themeActu {background: #ff6d24; color: #FFF; line-height: normal; padding: 0.51% 1.5%; font-size: 1em; display: inline-block; margin-right:1em; text-transform:uppercase; white-space: nowrap}
+
+	div#encartInstallateur{width:100%; padding:2% 0 2% 2%; min-height:183px; background:#E8E8E8;  box-sizing:border-box;-moz-box-sizing:border-box; text-align:center;}
+		div#encartInstallateur h3{font-size:1.2em; color:#3198cc; font-weight:600; text-align:center; margin-bottom:2%; }
+		div#encartInstallateur div.imgHolder{width:50%; margin:0 auto; }
+		div#encartInstallateur div.textHolder{ font-size:1em; padding-top:1%}
+		div#encartInstallateur div.textHolder a{display:block; font-size:1em; }
+		
+			div#encartInstallateur div.textHolder a.btn-decouvrir{display:inline-block; background:url(../_img/bg_btn_ins2.png) no-repeat right; padding:0 30px 0 10px; color:#3198cc; height:26px; line-height:26px; vertical-align:middle; border-radius:4px; font-size:13px; text-transform:uppercase; margin:15px auto 10px auto;}
+
+
+
+div#contentPage {padding:2%; font-size:0.9em; line-height:1.3em; position:relative}
+div#contentPage p {margin-bottom:1em}
+div#contentPage h1 {color: #3198cc;font-weight: 700;font-size: 1.9em;margin-bottom: 0.75em;line-height: 1.3em;}
+div#contentPage h2 {color:#ee8b03; font-weight:700; text-transform:uppercase; margin-bottom:0.2em}
+div#contentPage ul {margin-bottom:1em}
+div#contentPage ul ul {margin-left:1em}
+div#contentPage a {text-decoration:underline; color:#4d4747}
+div#contentPage img {margin:1em 0; max-width:100%; height:auto}
+div#contentPage.pagesstatiques img {margin:1em 0; width:auto; height:auto}
+div#contentPage.pagesstatiques img.full {margin:1em 0; width:100%; height:auto}
+div#contentPage div.themeActu {background: #ff6d24; color: #FFF; line-height: normal; padding: 0.51% 1.5%; font-size: 0.675em; display: inline-block; margin-right:1em}
+div#contentPage div.dateList {color: #ff6d24; font-size: 0.875em; display: inline-block;}
+div#contentPage div.dateList {margin:0}
+div#installateurWrapper  div#contentPage h1 {display:none}
+div#content h1 {color: #3198cc;font-weight: 700;font-size: 1.9em;line-height: 1.3em;}
+div#contentPage div#contentTxt  h4 {color: #3198cc;font-weight: 700;font-size: 1em;line-height: 1.3em;}
+div#installateurWrapper .chapeau{color: #3198cc;}
+div#content div#contentHomePart h1 {color: #ee8b03;font-weight: 700;font-size: 1.2em;line-height: 1.3em;}
+
+/* NAV */
+div#navigation ul {border-bottom:solid 1px #ee8b03; border-top:solid 1px #ee8b03;}
+div#navigation li {color:#ee8b03;}
+div#navigation li.active {background:#ee8b03}
+/* NAV */
+
+/* DEVIS */
+form#formDevis {padding-bottom:2em}
+div.blocDevis {width:90%; color:#FFF; padding:3% 3% 7% 3%; margin:2% 2% 1.5em 2%}
+div.blocDevis.trouvinstallateur {padding-bottom:0.5em}
+div.blocDevis h2 {font-size:1.6em; margin-bottom:0.275em}
+div.blocDevis {background:#fa9702}
+div.blocDevis.votreProjet {background:#ff6d24}
+div.blocDevis div.input {margin:0 0 0.25em 0}
+div.blocDevis div.input > input {margin:0}
+div.blocDevis div.radios {font-size:0.875em; margin-bottom:0.5em}
+div.blocDevis div.radios label span {font-weight:normal; display:inline-block; margin-left:0.5em}
+div.blocDevis div.radios label {margin-right:2em; font-size:0.875em; font-weight:700}
+div.blocDevis > div.select {margin:0 0 0.25em 0}
+div.blocDevis div.input label, div.blocDevis div.select label {margin-bottom:0.5em; display: inline-block; font-size:0.875em; font-weight:700}
+div.blocDevis div.input label span, div.blocDevis div.select label span {font-weight:normal; display:inline-block; margin-left:0.5em}
+div.blocDevis > div.select > select {padding:1.4%; color: #8e8888; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: none; width: 100%; background: #FFF; margin:0}
+div.blocDevis span {display:block}
+div.blocDevis div.radios input[type="radio"]#appartement {margin-left:1.5em}
+div.blocDevis div.input input[type="date"] {background:#FFF}
+div.textarea > textarea {width:97.6%; padding:1.2%; color:#8e8888; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border:none; height:10em; resize:none; margin-top:0.5em}
+button.btn-next{width:90px; height:90px; background:#ee8b03 url(../_img/simulateur/btn-next.png) no-repeat center; border-radius: 60px; float:right; border:none; cursor:pointer; margin: 15px 20px 0 0;}
+div#bloc2Devis {position:relative; margin-bottom:5em}
+div#bloc2Devis > button.btn-next {position: absolute; bottom: -8em; right: -1em;}
+div#enteteDevis {text-align:center; margin:1em 0 0 0; color:#656060; padding:2%}
+div#enteteDevis h1 {font-size:2.5em; color:#fa9702; font-weight:700}
+div#enteteDevis h1 span {font-size:0.65em; font-weight:500}
+div#enteteDevis hr {background:#fa9702; border:none; height:1px; margin:1.2em 0}
+div.bttUK {font-family: 'Dosis', sans-serif; background: #ffffff url(../_img/bg_btn_ins.png) no-repeat right center; color: #ff6d24; line-height: 25px; padding: 0.5% 30px 0.5% 1%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.875em; font-weight: 700; display: inline; border: none; cursor: pointer; margin-top: 0.5em; -moz-box-shadow: 0px 0px 5px #eb5910; -webkit-box-shadow: 0px 0px 5px #eb5910; box-shadow: 0px 0px 5px #eb5910; white-space: nowrap; float:right}
+
+div.blocDevis div.input.inclinaison, div.blocDevis div.input.surface, div.blocDevis div.input.echeance {width:100%}
+
+
+
+div#installateurs .liMailToInst {background:red; display:none}
+
+/* DEVIS */
+
+
+div#enteteGar {text-align:center; margin:1em 0 0 0; color:#656060; padding:2%}
+div#enteteGar h1 {font-size:2.5em; color:#3198cc; font-weight:700}
+div#enteteGar h1 span {font-size:0.65em; font-weight:500}
+
+/* TROUVER */
+iframe {width:100%}
+div.nomInstallateur {color:#ee8b03; font-weight:700; font-size:1.2em}
+div.enteteTrouvInstal {text-align:center; padding:1.5em 0 0 0; color:#756d6d; font-size:1.5em}
+div#map {margin:0 2%}
+/* TROUVER */
+
+div.question+div.question {margin-top:1.5em}
+div.question span {color:#FFF; background:#ed8600; display:inline-block; width:1.5em; height:1.5em;  -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; line-height:1.5em; text-align:center; margin-right:0.5em; font-weight:600}
+div.question input[type="radio"] {margin-left:2.5em}
+/* ------------- USER  ------------- */
+
+div#contentPage.textInstallateurs div#contentTxt a {color:#3198cc; text-decoration: underline}
+div#contentPage.textInstallateurs div#contentTxt h2, div#contentPage.textInstallateurs h1 {color:#3198cc;}
+div#contentPage.textInstallateurs div#contentTxt ul {margin-bottom:1.5em}
+div#contentPage.textInstallateurs div#contentTxt li {list-style-image:url(../_img/puce.png); margin:0 0 0 1em}
+
+div#contentPage div#contentTxt ul li {list-style-image:url(../_img/puce.png); margin:0 0 0 1em}
+
+div#contentPage div#contentTxt ol, div.blkRight ol, div.blockLeft ol {list-style-type: none; list-style-type: decimal !ie; /*IE 7- hack*/ margin: 0; padding: 0; counter-reset: li-counter;}
+div#contentPage div#contentTxt ol > li, div.blkRight ol > li, div.blockLeft ol > li {position: relative; margin-bottom: 1em; padding-left: 0.5em; min-height: 1.5em; margin-left:1.5em; line-height: 1.5em;}
+div#contentPage div#contentTxt ol > li:before, div.blkRight ol > li:before, div.blockLeft  ol > li:before {position: absolute; top: 0; left: -1.4em; width: 1.5em; height: 1.5em; font-size: 1em; line-height: 1.5; text-align: center; color: #f5f5f5; border-radius: 50%; background-color: #48b4ea; content: counter(li-counter); counter-increment: li-counter; font-weight:700}
+div.blockLeft  ol > li:before {color: #207faf; background-color: #FFF;}
+div.blockLeft ol {margin-top:1em}
+
+div.input.lost { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin:2% 0}
+div.input.lost > input {border:solid 1px #cccccc; padding:0 5%}
+
+ul#list.formationListe div.textList > a {color:#ff6d24}
+div#userWrapper ul#list.formationListe div.textListCont > a {color:#ff6d24}
+
+ul#list.formationListe div.themeActu {background: #ff6d24; color: #FFF; line-height: normal; padding: 0.51% 1.5%; font-size:1em; display: inline-block; margin-right:1em; text-transform:uppercase}
+ul#list.formationListe div.thumbList div.themeActu {position:absolute; right:-1em; top:1em}
+
+div.margin {width:100%; height:1em}
+
+.ui-tooltip {padding: 8px; position: absolute; z-index: 9999; max-width: 300px; -webkit-box-shadow: 0 0 5px #aaa; box-shadow: 0 0 5px #aaa; background:#FFF; font-size:0.775em}
+body .ui-tooltip {border-width: 2px;}
+
+nav#nav-wrap li span.number {display:none}
+
+div#blueBand {background:#3098cb; color:#FFF; border-bottom:solid 1px #FFF;}
+div#blueBandWrapper strong {font-weight:700}
+div#blueBandWrapper li {padding:2% 4%}
+div#blueBandWrapper img {float:left; margin-right:4%}
+div#blueBandWrapper p {margin-top:1.5%}
+
+form#formInstallateur div.input.third label span {margin-left:0; margin-bottom:5px}
+
+.labelpostcode {text-align:left; margin-bottom:10px}
+.jersey {text-align:left; font-size:12px}
+
+
+/* PRE HOME */
+body.prehome {background:url(../_img/bkg_prehome_frame.png) repeat-x  0 145px}
+div#prehomeWrapper {background:url(../_img/bkg_prehome.png) no-repeat center top; min-height:534px}
+body.prehome header {position:relative; display:none}
+div#logoPrehome {width:80%; height:auto; margin:19px auto}
+div#logoPrehome img {width:100%; height:auto}
+div.leftpreHome {padding:5%}
+div.rightpreHome {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background:#FFF; padding:5%; font-size:16px; line-height:22px}
+div.rightpreHome p+p {margin-top:20px}
+div.rightpreHome img {max-width:100%; margin:10% auto 0 auto}
+ul#listlang {margin-top:5%}
+ul#listlang li {position:relative; color:#FFF; background:#3198cc; display:inline-block; height:32px; line-height:32px; padding: 0.5% 40px; width: calc(100% - 80px); font-weight:600; font-size:15px}
+ul#listlang a {border-bottom:solid 1px #65b2d9}
+ul#listlang li+li {margin-top:3%}
+ul#listlang li img {position:relative; right:-5px; top:6px}
+p.title {font-weight:700; font-size:24px; text-align:center; color:#01448c}
+p.title img {width:80%; height:auto; margin:5% 0 7% 0}
+div#mailHome {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background:#ee8b03; color:#FFF; font-weight:600; margin:6% 2% 2% 2%; padding:2%; text-align:center; font-size:15px}
+div#mailHome p {margin-bottom:2%}
+div#mailHome input[type="text"] {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; width:65%; border:none; padding:1% 3%; color:#666}
+
+div#mailHome select {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; width:65%; border:none; padding:0.75% 3%; color:#666; margin-top:15px}
+
+div#mailHome button {font-family: 'Dosis', sans-serif;; border:none; background:none; color:#FFF; font-weight:700; font-size:16px; cursor:pointer}
+div#notices { padding:2%; background:#FFF; line-height:22px; font-size:14px}
+div#notices p.titre {font-size:24px; font-weight:bold}
+div#notices p+p {margin-top:20px}
+div#notices p.titre+p {margin-top:5px;}
+div#notices p+p.design {margin-top:40px}
+div#notices strong {font-size:18px}
+div#notices strong, div#notices p.titre {color: #3198cc;}
+/* PRE HOME */
+
+
+div#contentPage div#contentTxt ul.listeLogos li {float:left; list-style-image:none; padding:0.5%}
+
+div.energySolutions {font-weight:700}
+div.energySolutions  img {width:100%; height:auto}
+
+p.noteUK {font-size:14px; line-height:18px;}
+p.noteUK+p.noteUK {margin-bottom:35px; margin-top:15px}
+
+div.maintenanceBlockRight {color:#FFF; background: #ed8600; padding:2%; margin:30px 0}
+div.maintenanceBlockLeft {color:#6f6b6b}
+
+
+
+div#installateurs ul li.blockEcrire {margin-top:0; background: #e8e8e8; padding:1%; width:98%; display:none; height:auto}
+.txtaMailToInst {width:98%; resize:none; height:5em; padding:1%; margin-bottom:1%}
+.blockEcrire a.send {padding:5px 10px; border:none; background:#666666; color:#FFF;}
+.blockEcrire a.cancel {padding:5px 10px; border:none; background:#999999; color:#FFF;}
+.blkBtt {text-align:right}
+
+
+
+.telInstallateur span, .mailInstallateur a {
+background: #ee8b03;
+color: #FFF;
+padding:0 8px;
+display:block
+}
+
+.mailInstallateur a {
+padding:0 8px;
+margin-top:4px
+}
+
+.telInstallateur span img, .mailInstallateur a img {margin-right:6px}
+
+/* 404 */
+div.img404 {max-width: 755px; margin: 30px auto; position: relative;}
+div.img404 img {width:100%; height:auto}
+div.bulle404 {background: url(../_img/bulleHomeSlider.png) no-repeat center; width: 252px; height: 209px; position: absolute; right: 15px; top: 0; color: #FFF; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box;
+padding: 40px 20px 10px 60px; text-align:center; font-size:12px; line-height:15px}
+strong.big {font-size:20px}
+div.bulle404 > .icon{width:60px; height:60px;position:absolute;  background:#ed5802; border-radius:60px; top:0px; right:0px;}
+div.bulle404 p+p {margin-top:6px}
+div.bulle404 a {background:#efa844; color:#FFF; border:solid 1px #dfaf63; display:inline-block; padding:4px 8px; margin-top:8px; font-size:15px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+/* 404 */
+
+div#installateurs textarea {width:97.6%; padding:1.2%; color:#8e8888; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border:none; height:10em; resize:none; margin:0.5em 0 1em 0;}
+
+div.adressepostale {float: right;line-height:22px;margin-top: -22px;margin-bottom: 22px;}
+
+
+p.pdfico {heigth:48px; line-height:48px; background:url(../_img/pdf.png) center left no-repeat; padding-left:50px; margin-left:40px}
+p.pdfico a {line-height:normal}
+
+
+@media screen and (min-width: 600px) {
+div.financement img , div.fiscalite img, div.garantieRexel img, div.aideFiscalite img, div.financementDevis img {width:auto; height:auto}
+div#contentTxt {-moz-column-count: 1; -webkit-column-count: 1; -o-column-count: 1; column-count: 1; -moz-column-gap: 0; -webkit-column-gap: 0; -o-column-gap: 0; column-gap: 0; margin-bottom: 2em;}
+div#logoPrehome {width:475px; height:96px; margin:19px auto}
+div.leftpreHome {width:57%; float:right; margin-top:320px}
+div.rightpreHome {width:28%; margin-top:90px; float:right; padding:2.5%}
+body.prehome header {display:block}
+div#award {display:none}
+ul#listlang {text-align: center;}
+ul#listlang li {width: 31.6%; /*float: left;*/ margin: 2% 2% 0 2%; text-align: center;}
+ul#listlang li+li {margin: 2% 2% 0 2%; }
+body.prehome footer, body.prehome div#footerWrapper {height:5.4375em}
+}
+
+@media screen and (max-width: 640px)  {
+div.adressepostale {float: none ;line-height:22px;margin-top: 22px;margin-bottom: 22px;}
+div.blocDevis {padding: 3% 3% 19% 3%;}
+}
+
+@media screen and (min-width: 768px) {
+.leftfloat {width:49%; float:left; margin-right:1%}
+.rightfloat {width:49%; float:left; margin-left:1%}
+}
+
+@media screen and (max-width: 920px)  {
+div#clients ul li.ssBlock div.dateClient {width:8%;}
+div#clients ul li.ssBlock div.contactClient {width:64%;}
+div#clients ul li.ssBlock div.sppClient.cxl {width:8%}
+div#clients ul li.ssBlock div.sppClient.del {width:8%;}
+}
+
+
+@media screen and (min-width: 920px) {
+
+div.cleaningLeft, div.cleaningRight {float:left; width:48%}
+div.cleaningLeft {margin-right:2%}
+div.cleaningRight {margin-left:2%}
+
+div#award {position: absolute; top:-10px; left:0; display:block}
+div#wrapperprehome {width:980px; margin:auto}
+div#notices {margin:0 auto; width:60%}
+	
+div#blueBandWrapper {width: 900px; margin: auto;}
+div#blueBandWrapper ul {text-align:center}
+div#blueBandWrapper li {padding:1.5% 1%; width:36.333333%; display:inline-block; text-align:left}
+div#blueBandWrapper li+li {border-left:solid 1px #59add5}
+div#blueBandWrapper p {margin-top:3%}
+
+div#bttMenu {display:none}
+nav#nav-wrap {display:block;}
+div#userWrapper nav#nav-wrap ul {/*text-align:center; */margin-left: 0%; margin-top: 8%;}
+nav#nav-wrap ul {/*text-align:center;*/ padding-top: 0.5em;}
+nav#nav-wrap li {display: inline-block; font-size: 0.805em; padding: 0; width: 10.5%; border: none; background: none; text-align: center;}
+nav#nav-wrap li a {color:#000; text-decoration:none}
+/*nav#nav-wrap li strong{font-size:1.125em}*/
+
+/*div#userWrapper nav#nav-wrap li:hover > div.ssMenu {display:block}*/
+div#userWrapper nav#nav-wrap li > div.ssMenu {position:absolute;  z-index:99;}
+div.arrowssMenu {position:absolute; display:block}
+div#userWrapper nav#nav-wrap li > div.ssMenu {width:13.063em;}
+div.wrapperssMenu {margin-top:1em}
+
+
+/*div#userWrapper nav#nav-wrap ul {text-align:center;}*/
+div#userWrapper nav#nav-wrap li {display:inline-block; font-size:0.705em; padding:0 0.5%; width:auto; border: none; background:none;}
+div#userWrapper nav#nav-wrap li a {color:#000; text-decoration:none}
+div#userWrapper nav#nav-wrap li strong{font-size:1.125em}
+div.txtMenu.userNav {font-size:0.875em}
+div.txtMenu.userNav span {display:block; height:15px}
+
+div.informations.creation div.select.right {float:right; width:49%}
+div.informations.creation div.select.right > select {padding:2.4% 2%}
+
+ul#listlang {text-align: left;}
+ul#listlang li {width: 31.6%; float: left; margin: 2% 2% 0 2%; text-align: center;}
+
+
+div#logoSolar {text-align:center; padding-top:5%}
+
+div#headerWrapper, nav#nav-wrap, div.bluePartWrapper, div#footerWrapper, div#content, div#navEtapes {width:900px; margin:auto}
+div#headerWrapper {position:relative}
+ul#list > li.formationUne {width:100%; float:left; height:auto}
+ul#list > li {width:31.33333333333333%; font-size:0.713em; float:left; padding:1%; height:26em; overflow:hidden; margin:0}
+ul#list.actusListe > li.formationUne {height:auto; margin-bottom:1.5em}
+div.vid {position:absolute; top:50%; left:50%; margin-top:-1.3125em; margin-left:-1.3125em; width:2.625em; height:2.625em}
+div.vid > img{width:2.625em; height:2.625em}
+div#sidebarList {float:right; width:15%; margin:3em 8% 0 2%; padding:0}
+div.plusActu, div#sidebarList ul {display:block}
+/* NAV */
+	div#navigation {margin:2% 0 4% 0; text-align:center}
+	div#navigation ul {padding:0.75% 2%;}
+	div#navigation li {line-height:1.98em; font-size:0.775em}
+	div.thumbMenu {text-align: center; width: 100%;}
+	div#userWrapper nav#nav-wrap div.thumbMenu, div#userWrapper nav#nav-wrap div.txtMenu {text-align: left; width: auto;}
+	div.txtMenu {width: 100%; text-align: center; height: 3em;}
+/* NAV */
+ul#list.actusListe {width: 100%;}
+div#contentActu {width: 62%; float: left;}
+div#contentHomePart {width: 70%; float: left;}
+
+div#content.homeEngWrapper {width:803px}
+div#content div#contentHomePart.homeEng h1 {text-align:left}
+
+div#contentHomePart ul{width:100%; display:table;}
+div#contentHomePart ul li{width:23%; vertical-align:top; display:table-cell; padding:1%;}
+div#contentHomePart ul li+li{border-left:#CCC 1px solid;}
+#content .encart{float:left;  width:25%; margin:3% 0 0 0; padding:2%; color:#FFF; box-sizing:border-box; -moz-box-sizing:border-box;}
+
+#content .encart > h2{font-weight:bold; font-size:1em;}
+/*ul#list.actusListe > li {width: 48%;}*/
+ul#list > li.formationUne {width:80%; margin:0 20% 0 0}
+ul#list.actusListe > li.formationUne {width:70%; position:relative}
+ul#list.actusListe > li.formationUne > div.textList {position:absolute; bottom:6em; right:0; width:30%}
+ul#list > li.formationUne > div.thumbList {width:60%; float:left; margin-right:2%}
+ul#list.actusListe > li.formationUne > div.thumbList {width:68%; }
+div.dateList {font-size:1em; margin-top:2%}
+ul#list > li.formationUne div.dateList {color: #3198cc; margin:0; font-weight:600}
+ul#list > li h2 {margin-bottom:1.6%; float:right; width:38%; text-align:left; margin-top:4%}
+div.bluePartWrapper > h1 {margin-bottom:1%}
+ul#list {padding: 2% 0;}
+div.bluePartWrapper {padding: 1.5% 0%;}
+div#bluePartText {width:50%; float:left; text-align: left; margin-left:2%}
+div.imgbluePart {position:absolute; top:-50px; right:0; width:50%; text-align:center; display:block; height:180px; line-height:180px;}
+div.imgbluePart > img {vertical-align: middle;}
+div.thumbMenu img {width:33px; height:auto}
+div.thumbMenu {margin-right: 0.3em;}
+div#userWrapper nav#nav-wrap div.thumbMenu {margin-right: 0.5em;}
+nav#nav-wrap {margin:2% auto}
+div#bienvenue {font-size: 1.25em; margin-left:10%}
+div#bienvenue > strong{font-size:1.5em; display:inline}
+div#blocLogin {display:inline-block; float:right}
+div#prospects, div#projets {display:inline-block; padding: 0 1em; font-size: 0.650em;}
+div#projets {padding-right:0}
+div#projets {border-left:solid #c6c5c5 1px}
+div#blocProjets {float: right; margin: 0 0 10px 0;}
+nav#nav-wrap {margin: 2% auto 5.5% auto;}
+div#footerWrapper {height:9.4375em;}
+div#footerWrapper > a.more {width: auto; display: inline-block; padding: 0.5% 1%; font-size: 1em; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; position:absolute; top:12%;}
+footer {height:9.4375em; padding:0}
+nav#navBottom {display:inline-block; position:absolute; bottom:5%}
+div#social {width: auto; text-align: center; padding:0; position: absolute; display: inline-block; right: 0; top:12%; font-size: 1.138em;}
+div#social span {display:inlie-block; top:-10px; position:relative; left:-10px}
+div#rexel { width: auto; text-align: center; padding:0; position: absolute; display: inline-block; right: 0; bottom:20%; font-size: 1.138em;}
+a.facebook, a.twitter {width:2.750em; height:2.750em; margin-bottom:-1.5}
+a.facebook img, a.twitter img {width:2.750em; height:auto}
+a.rexel img {/*width:5.2em;*/ height:auto; margin-left:1em}
+div.bluePartWrapper h1 {line-height:1em /* normal */}
+
+/* FORM */
+
+div.blocDevis div.input label, div.blocDevis div.select label {margin-bottom:0; display: inline; font-size:0.875em; font-weight:700}
+div.blocDevis div.input label span, div.blocDevis div.select label span {font-weight:normal; display:inline-block; margin-left:0.5em} 
+div.blocDevis div.input label.error, div.blocDevis div.select label.error {color:#ff0000; font-size:0.775em}
+section.sectionDevis {background:url(../_img/sectionDevis.png) repeat-x}
+div.enteteform {padding:2.5% 0}
+div.informations, div.description {float:left; height: 180px; position:relative}
+div.informations.creation, div.description.creation {float:left; height:auto;}
+
+div.informations.creation.maintenance, div.description.creation.maintenance {height:415px;}
+
+div.materiel, div.complement {float:left; /*height: 130px;*/}
+div.informations, div.informations.creation {width:45%; margin:0 1% 2% 0; color:#FFF; padding:2%}
+div.informations.creation+div.informations.creation {margin:0 0 2% 1%;}
+div.description {width:45%; margin:0 0 2% 1%; color:#FFF; padding:2%}
+div.materiel {width:45%; margin:0 1% 2% 0; color:#FFF; padding:2%}
+div.complement {width:45%; margin:0 0 2% 1%; color:#FFF; padding:2%}
+div.estimation, div.valorisation, div.emissions, div.confirmation {width: 97%; margin:0 0 0.5% 0; color: #FFF; padding:1.5%;}
+div.description div.input {width:49%; float:left}
+div.description div.input.surface {width:49%; float:right}
+
+div.description div.input.third {width:32%; float:left;}
+div.description div.input.third+div.input {width:22%; margin-left:2%; margin-top:43px}
+div.description div.input.third+div.input+div.input {width:42%; margin-top:19px}
+
+div.input > input.half {width:43.5%}
+div.input > input.half+input.half {margin-left:3%}
+div.zipcode small {font-size:14px}
+div.zipcode {margin-bottom:10px}
+div.zipcode i {background:#FFF; color:#48b4ea; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding:0 3px; font-style: normal;}
+div.zipcode.add {margin-bottom:0}
+div.zipcode.add i {color:#fa9702}
+
+div.informations.creation div.select {margin-bottom:0}
+div.informations.creation div.input.left, div.informations.creation div.select.left {width:49%; float:left}
+div.informations.creation div.select.left > select {padding:2.5% 2%}
+div.informations.creation div.input.right {width:49%; float:right}
+
+div.informations div.select {margin-bottom:1.1em}
+div.description div.input {margin-bottom:1%}
+div.materiel div.input {width:26%; float:right; margin: 1.5% 0;}
+div.materiel div.select.panneau {width:70%; float:left; margin: 1.5% 0;}
+
+div.materiel div.input > input { padding: 0 30% 0 6%; width:64%}
+/*div.materiel div.select.panneau > select {width:70%; float:left}*/
+div.materiel div.select.onduleur > select {width:100%}
+/*div.complement div.input {width:49%;}*/
+div.complement div.input label {width: 49%; display: inline-block; font-weight:normal; font-size: 0.975em; padding-top: 1em;}
+div.complement div.select > select {width:100%}
+div.estimation, div.valorisation, div.emissions, div.arbres, div.confirmation {line-height:38px}
+div.estimation strong, div.valorisation strong, div.emissions strong, div.arbres strong {float:left}
+div.emissions span {font-size:1.4em}
+div.estimation div.input, div.valorisation div.input, div.emissions div.input, div.arbres div.input, div.confirmation div.input {width:38%; float:right; text-align:right}
+div.estimation div.input > input, div.valorisation div.input > input, div.emissions div.input > input, div.arbres div.input > input, div.confirmation div.input > input {padding: 0 8% 0 2%; text-align:right; width:auto;}
+
+div.estimation div.input > span, div.valorisation div.input > span, div.emissions div.input > span, div.arbres div.input > span, div.confirmation div.input > span {font-size: 0.875em;
+display: inline-block; position: relative; right: auto; top: auto; color: #FFF; width:30%; margin-left:2%; text-align:left }
+
+
+
+div.estimation div.input > input {-moz-box-shadow: 0px 0px 8px #ad6801; -webkit-box-shadow: 0px 0px 8px #ad6801; box-shadow: 0px 0px 8px #ad6801;}
+div.valorisation div.input > input {-moz-box-shadow: 0px 0px 8px #b04b19; -webkit-box-shadow: 0px 0px 8px #b04b19; box-shadow: 0px 0px 8px #b04b19;}
+div.emissions div.input > input {-moz-box-shadow: 0px 0px 8px #2e812e; -webkit-box-shadow: 0px 0px 8px #2e812e; box-shadow: 0px 0px 8px #2e812e;}
+div.arbres div.input > input {-moz-box-shadow: 0px 0px 8px #3d973d; -webkit-box-shadow: 0px 0px 8px #3d973d; box-shadow: 0px 0px 8px #3d973d;}
+div.arbres {background:#58db58 url(../_img/arbre.png) no-repeat 1% 50%; width: 92.5%; margin:0 0 0.5% 0; color: #FFF; padding:1.5% 1.5% 1.5% 6%} 
+div.warnbValorisation {color: #8e8888; font-size: 0.700em; width: 90%; margin: 1% 0 2% 0; padding: 0; line-height:1.2em}
+div.generer {line-height: 1.475em; /*padding: 2%;*/ width: 25%; margin:auto; float:right; margin-top:1%}
+div.financement, div.fiscalite  {margin:1% 0 5% 0; width:47.5%; padding:1%; float:left}
+div.garantieRexel, div.aideFiscalite, div.financementDevis {margin:1% 0 5% 0; width:30.66666666666667%; padding:1%; float:left}
+div.aideFiscalite, div.financementDevis {margin-left:1%}
+div.fiscalite {margin-right:0.5%}
+div.financement {margin-left:0.5%}
+div.financement > a > strong, div.fiscalite > a > strong, div.garantieRexel > a > strong, div.aideFiscalite > a > strong, div.financementDevis > a > strong {margin-bottom:1.5%}
+div.confirmation{margin-bottom:5%}
+div.confirmation.nobottom{margin-bottom:0.5%}
+div#configurateur {position: absolute; top: 6%; right: 0; width: 38%;}
+/* FORM */
+
+/* PROSPECTS / CLIENTS */
+div#nouveauxProspects ul {margin-left:-1.5%}
+div#nouveauxProspects ul li {width:44.5%; float:left; padding:2%; margin:0 0 1.5% 1.5%; position:relative}
+div.joursRestants {margin:0; position:absolute; top:10%; right:2.5%}
+div.statutProspect {margin:0; position:absolute; bottom:10%; right:2.5%; padding:0.5% 1em; white-space:nowrap}
+div#clients ul li, div#installateurs ul li {display: table;
+height: 100%;
+width: 100%;
+margin: 0;
+position: relative;
+padding: 0}
+div#clients ul li+li, div#installateurs ul li+li {margin-top:1.5%}
+div.dateClient, div.coordClient, div.statutClient, div.sppClient, div.contactClient, div.coordClientSuivi, div.dateOuverture, div.blueDate {padding:1% 0; margin:0; display:table-cell; line-height:normal; border:none;}
+
+
+
+div.feedClient {
+position: absolute;
+bottom: 0;
+right: 2.2%;
+width: 87.8%;
+text-align: center;
+color: #FFF;
+height: 16px;
+line-height: 16px;
+font-size: 17px;
+padding: 3px 0;
+}
+
+div.feedClient a {display:block; width:100%}
+
+div.feedClient.orange {
+background: #ec8d23;
+}
+
+div.feedClient.green {
+background: #3198cc;
+}
+
+div.BlueBar {padding:1% 0; margin:0; display:table-cell; line-height:normal; border:none;width:2.25%;}
+
+div#clients ul li  div.statutClient > ul > li {display:inline-block; width: 18%;}
+div.dateClient {width:10%; text-align:center; vertical-align:middle}
+
+div.dateClient span {display:block}
+div.coordClient {width:35%; vertical-align:middle; padding:1.5% 1.5% 45px 1.5%;}
+div.coordClientSuivi {width:35%; vertical-align:middle; padding:1.5% 3.5%}
+div.statutClient {width:30%; vertical-align:middle; padding: 0 1.5%;}	
+div.sppClient {width:2%; vertical-align:middle}
+div.blueDate  {width:auto; vertical-align:middle; text-align:center}
+div.contactClient {width:23%; vertical-align:middle}
+div.dateOuverture {width:23%; vertical-align:middle; text-align:center; color:#6f6b6b}
+div.statutClient.dossier {width:23%; vertical-align:middle; text-align:left; color:#6f6b6b; padding-left:5%}
+div.dateOuverture strong {color:#1a1a1a; font-weight:normal}
+div.nomClient, div.mailClient {margin:0}
+div.telClient {font-size:0.875em}
+div#ajoutClients a, div#demanderDevis a, div#chercherInstall a, button.validImprim{ padding: 0.2% 30px 0.2% 2%;}
+div#ajoutClients, div#newClients, div#demanderDevis {width:48%; float:right; margin-bottom:2%;}
+div#ajoutClients, div#newClients, div#demanderDevis p {text-align:right; margin-top:0.2em}
+div#chercherInstall {margin-right:40%; margin-top:14%}
+div#newClients strong {float:right; display:block}
+div#nouveauxProspects h2 {margin-bottom: 2%; padding-bottom: 1%; width:50%; float:left}
+div#clients h2, div#installateurs h2 {margin-bottom: 2%; padding-bottom: 1%; width:50%; float:left}
+
+div#nouveauxProspects.fullSize h2{margin-bottom: 2%; padding-bottom: 1%; width:100%; float:left}
+div#nouveauxProspects.fullSize h2 img {margin-top:0.2em; width:auto; height:auto; max-width:115px}
+
+/* PROSPECTS / CLIENTS */
+
+/* HOME */
+aside {padding:2%; float:right; width:20%; margin-top:-220px}
+div#contentHome {float:left; width:76%}
+div#simulez div.bubble {display:table;margin-top: 0; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; height:195px; width:195px; padding:1%; position:absolute; left: 5%; top:-2%}
+div.bubbleWrapper {display:table-cell; vertical-align:middle}
+div#simulez a {padding: 0.5% 30px 0.5% 3%;}
+div#simulez {position:relative; text-align:center; margin:2% 0; padding:2% 10% 2% 0}
+div#simulez img {display:inline}
+div#arrow {position: absolute; top:45%; right:-58px;}
+div#dernieresNews {width:57.5%; float:left; margin:0; padding:0 }
+div#pubHome {width:32.5%; float:left; margin:0 2.5%; padding:2.5%;}
+div#formationsLigne li div#pubHome {width:95%}
+div.imgpubHome {text-align:center}
+div#pubHome img {width:auto; height:auto; margin:2px 0}
+div#dernieresNews div.thumbList {width: 35%; float:left; margin-right: 3%;}
+div#dernieresNews div.textListCont {width:61%; float:left; margin-left:4%}
+aside div#nouveauxProspectsHome {position:relative}
+aside div.statutClient > ul {margin:5% 0;}
+aside div#projetsHome > ul > li {margin:5% 0}
+aside div#nouveauxProspectsHome > ul > li {padding: 5% 0;}
+aside div#projetsHome {margin:5% 0}
+aside a.readMore {margin-top:5%}
+div#formationsLigne {padding:0;}
+div#formationsLigne li {width:29.33333333333333%; float:left}
+div#formationsLigne > ul li+li {margin:0 0 0 4.5%}
+div#dernieresNews div.themeListHome {margin-bottom:2%}
+div#formationsLigne h2 {margin-bottom: 6%; padding-bottom: 3.5%;}
+div#dernieresNews h2 {margin-bottom: 3.3%; padding-bottom: 2%;}
+div#formationsLigne {position:relative}
+div#formationsLigne a.readMore {font-size:0.775em; margin-top:1.5%}
+div.ombreDroite, div.ombreGauche {display:block}
+div.ombreDroite {position:absolute; right:-15%}
+div.ombreGauche {position:absolute; left:-15%}
+
+div#netstore {width:110%; padding:4%; margin:10% 0 0 -7%}
+div#netstore div.thumbNetstore { padding-right: 1%; margin-right: 1%;}
+div#netstore {font-size: 0.685em;}
+
+
+div.bluePartWrapper.homeLogin {padding:0; display:table; margin-top:-1px}
+div#blocConnectWrapper{display:table-cell; width:33.33333333333333%; vertical-align:middle}
+div.accrocheLogin {width:30%; display:table-cell; width:31.33333333333333%; vertical-align:middle;}
+div#rejoignez {background:url(../_img/rejoignez.png) right no-repeat; width:34%; position:relative; display:table-cell; width:33.33333333333333%; vertical-align:middle; height:10.35em;}
+div#blocConnect {width:70%;}
+
+div#rejoignez div.bubble {background:#ee8b03; color:#FFF; padding:4%; text-align:center; margin-top:-1px}
+div#rejoignez div.bubble {display:table;margin-top: 0; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; height:150px; width:150px; padding:1%; position:relative; left: 0; top:-2%; font-weight:600; font-size:1em; line-height:1.2}
+div#rejoignez div.bubble span {position:relative; z-index:999}
+div#rejoignez div#arrow {position: absolute; top:50%; right:5px}
+	
+	
+	
+/* HOME */
+
+div.dateProspect {position: absolute; top: 12%; right: 10%;}
+
+/* ------------- USER  ------------- */
+div#userWrapper div#bluePart {background:#d1e6ef url(../_img/bgBande.png) top repeat-x;}
+div#userWrapper div#bluePart h1 {margin:0}
+div#userWrapper div#bluePart.devis h1 span {background:#ee8b03; display:inline-block; padding:1 4%; font-size: 1em;}
+div#userWrapper div#bluePart.devis h1 span+br+span {font-size: 1.575em; margin-left:15%; padding:2% 4%}
+
+div#userWrapper div#bluePart h1 span {background:#ee8b03; display:inline-block; padding:1.5% 4%; font-size: 1.575em; position: relative; z-index: 2;;}
+div#userWrapper div#bluePart h1 span+br+span {font-size: 1em; margin-left:15%; padding:1% 4%; z-index:1}
+
+div#userWrapper header {border-bottom: solid 1px #FFF; position: relative; /*z-index: 99999;*/}
+div#userWrapper div.thumbMenu img {width:40px}
+div#userWrapper nav#nav-wrap li strong {font-size:1.485em}
+div#logoSolar {text-align: left; padding-top:0; position:absolute; top: 0; left:0;}
+/*div#logoSolar img {border-right:solid 1px #d6d9db}*/
+div#userWrapper li.formationUne div.themeActu {margin-bottom:1em}
+/* ------------- USER  ------------- */
+
+div#navEtapes {display:block;position:relative}
+div#textEtapes {color:#3198cc; text-transform:uppercase; position:absolute; top:-47px; left:50%; background: url(../_img/bgtextEtapes.png) top center no-repeat; padding-top:1%; width:350px; margin-left:-175px; font-size:0.75em}
+div#navEtapes {text-align:center}
+div#navEtapes ul {text-align:center; margin-top:2%;margin-bottom: 2%; display:block; width:100%}
+div#navEtapes ul > li {width:10.5%; display:block; float:left; font-weight:700; font-size:0.775em; color:#756d6d; height: 5em; padding-bottom:1em; }
+
+div#navEtapes ul > li  div.icon { margin:0 auto; width:40px; height:40px; overflow:hidden; color:#FFF; background-repeat:no-repeat; background-color:#FFF; font-size:1.5em; line-height:40px; vertical-align:middle; border-radius:40px}
+	div#navEtapes ul > li  div.icon.lead{background-image:url(../../_img/nav/lead.png)}
+	div#navEtapes ul > li  div.icon.simulateur{background-image:url(../../_img/nav/simulateur.png)}
+	div#navEtapes ul > li  div.icon.garantie{background-image:url(../../_img/nav/garantie.png)}
+	div#navEtapes ul > li  div.icon.solutions{background-image:url(../../_img/nav/solutions.png)}
+	div#navEtapes ul > li  div.icon.solutionsuk{background-image:url(../../_img/nav/solutionsuk.png)}
+	div#navEtapes ul > li  div.icon.formation{background-image:url(../../_img/nav/formation.png)}
+	div#navEtapes ul > li  div.icon.incentives{background-image:url(../../_img/nav/incentives.png)}
+	div#navEtapes ul > li  div.icon.assistance{background-image:url(../../_img/nav/assistance.png)}
+	div#navEtapes ul > li  div.icon.aide{background-image:url(../../_img/nav/aide.png)}
+	div#navEtapes ul > li  div.icon.clients{background-image:url(../../_img/nav/clients.png)}
+	
+div#navEtapes ul > li  div.icon > div {display:none;}
+
+div#navEtapes ul > li:hover  div.icon,div#navEtapes ul > li.active  div.icon{background-image:none; background-color:#ee8b03;}
+div#navEtapes ul > li:hover  div.icon > div, div#navEtapes ul > li.active  div.icon > div{display:block;}
+
+div#loginSliderWrapper{display:block; height:670px; width:100%; background:url(../_img/bg_login_slider.jpg) no-repeat center; background-size:cover; border-bottom:#FFF 1px solid;position:relative;}
+	div#devenirInstallateur{position:absolute; width:240px; background:#44b0e7; border-radius:10px; color:#FFF; padding:0 20px 20px 20px; text-align:center; box-sizing:border-box;-moz-box-sizing:border-box;top:50px; right:40px}
+			div#devenirInstallateur .bulle{margin:0 auto; width:149px; height:160px; margin:0 auto;margin-top:-32px; background:url(../_img/bulle_devenir_installateur.png) no-repeat center;font-weight: 600;}
+			div#devenirInstallateur a{display:block; font-size:13px;}
+			div#devenirInstallateur a.btn-ins{display:inline-block; background:url(../_img/bg_btn_ins.png) no-repeat right; padding:0 30px 0 10px; color:#ec8600; height:26px; line-height:26px; vertical-align:middle; border-radius:4px; font-size:13px; text-transform:uppercase; margin:15px 0 10px 0;}
+
+
+/* DEVIS */
+div.blocDevis {width: 93%; margin:0 0 1.5em 0; color: #FFF;  padding:1.5% 1.5% 2% 1.5%; margin:2em 2% 0 2%}
+div.blocDevis.trouvinstallateur {margin-top:1.1em}
+div.blocDevis {line-height:38px; overflow: hidden;}
+div.blocDevis strong {float:left}
+
+div.blocDevis div.input.cp_uk {width:13%; float:left}
+div.blocDevis div.input.cp_uk+div.input.cp_uk {margin-left:2%; margin-top:39px}
+div.blocDevis div.input.nom, div.blocDevis div.input.prenom, div.blocDevis div.input.email, div.blocDevis div.input.telephone {width:49%; float:left}
+
+div#installateurs div.input.nom, div#installateurs div.input.prenom, div#installateurs div.input.email, div#installateurs div.input.telephone {width:49%; float:left}
+div#installateurs div.input.prenom, div#installateurs div.input.telephone {margin-left: 2%;}
+
+div#installateurs label {margin-bottom: 0; display: inline; font-size: 0.875em; font-weight: 700; color:#424242}
+div#installateurs div.input > input, div#installateurs textarea {margin-top:0}
+
+
+div.blocDevis div.input.prenom, div.blocDevis div.input.telephone {margin-left:2%}
+div.blocDevis div.input.codepostal, div.blocDevis div.input.ville, div.blocDevis div.select.pays, div.blocDevis div.input.button, div.blocDevis div.input.pays, div.blocDevis div.select.ville {width:28%; float:left}
+div.blocDevis div.input.ville, div.blocDevis div.select.ville {width:40%}
+div.blocDevis div.input.ville, div.blocDevis div.select.pays, div.blocDevis div.input.button, div.blocDevis div.input.pays, div.blocDevis div.select.ville {margin-left:2%}
+div.blocDevis div.input.email, div.blocDevis div.input.telephone {margin-bottom:0}
+div.input.adresse > input {width:97.4%}
+div.input.adresse > input {padding: 0 1.2%;}
+div.blocDevis > div.select > select {padding:1.5%}
+div.blocDevis > div.select.ville > select {padding:1.5% 2%}
+
+div.blocDevis div.radios+div.radios {margin-top:-0.85em}
+div.blocDevis span {display:inline}
+div.blocDevis div.radios input[type="radio"]#appartement {margin-left:1.6em}
+div.blocDevis div.radios input[type="radio"]#principale {margin-left:3.4em}
+div.blocDevis div.nature  {width:40%; float:left}
+div.blocDevis div.orientation  {width:58%; float:left}
+div.blocDevis div.inclinaison, div.blocDevis div.surface  {width:32%; float:left}
+div.blocDevis div.echeance  {width: 51%; float:left}
+div.blocDevis div.echeance > input {background:#FFF}
+div.blocDevis div.orientation, div.blocDevis div.surface, div.blocDevis div.echeance {margin-left:2%}
+div.blocDevis > div.select.nature > select, div.blocDevis > div.select.orientation > select {padding:1% 0}
+a.bttEtape {background: #ffffff url(../_img/bg_btn_ins.png) no-repeat right center; color: #ff6d24; line-height: 25px; padding: 0.5% 30px 0.5% 2%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-transform: uppercase; font-size: 0.875em; font-weight: 700; display: inline; float: right; border: none; cursor: pointer; margin-top:1.2em}
+/* DEVIS */
+
+/* TROUVER */
+iframe {margin:1em auto; display:block}
+
+
+div#installateurs ul li {display:table;height:4.6em;width:100%;margin:0;padding:0;}
+div#installateurs ul li+li {margin-top:1%}
+
+div#installateurs ul li div.logoInstal{margin:0; display:table-cell; line-height:normal; border:none; vertical-align: middle; width:10%;  background: #ee8b03 url(../_img/installateur.png) center left no-repeat}
+
+div.coordInstallateur {margin:0; display:table-cell; line-height:normal; border:none; vertical-align: middle; width:68%; padding-left:2%}
+div.contactInstallateur {margin:0; display:table-cell; line-height:normal; border:none; vertical-align: middle; width:20%}
+
+div.nomInstallateur, div.adresseInstallateur {float:left; width:49%; padding-right:1%}
+div.contactInstallateur {text-align:center}
+
+/* TROUVER */
+div#homeSlider{display:block; background:#f8f8f8 url(../_img/bg_slider_home.jpg) no-repeat top center; position:relative;}
+	div#homeSlider .ombre{display:block; background:url(../_img/ombreHomeSlider.jpg) repeat-x center; width:100%; height:9px; position:absolute; bottom:-9px;}
+	div#homeSlider .wrapper{width: 100%; max-width:980px; margin:0 auto; height:370px; text-align:center; position:relative}
+	div#homeSlider .title{height:84px; top:75px; position:relative;}
+	div#homeSlider .title span{display:block; background:#ee8b03; color:#FFF; padding:8px 12px 10px 12px; font-weight:700; font-size: 24px; width:auto; float:left;clear:both;}
+		div#homeSlider .title span + span{ clear:both;}
+	div#homeSlider .btns_wrapper{display:block; position:relative; top:170px; color:#3198cc}
+	div#homeSlider .btns_header{display:block; font-weight:600; font-size:22px; background:url(../_img/bg_barre_bleue.jpg) repeat-x center;}
+		div#homeSlider .btns_header span{background:#F8F8F8; padding:0 20px}
+		div#homeSlider .wrapper ul{display:table; width:70%; margin:0 auto;margin-top:15px;}
+	div#homeSlider .wrapper ul > li{display:inline-block; text-transform:uppercase; font-size:14px; display:table-cell; width:10%; cursor:pointer;transition:color 0.3s ease-out;-webkit-transition:color 0.3s ease-out;-moz-transition:color 0.3s ease-out;}
+		div#homeSlider .wrapper ul > li .num{color:#FFF; font-weight:bold; font-size:24px; background:url(../_img/bg_num_off.png) no-repeat center; padding-top:5px; width:35px; height:40px; box-sizing:border-box;-moz-box-sizing:border-box; margin:0 auto; transition:background-image 0.3s ease-out;-webkit-transition:background-image 0.3s ease-out;-moz-transition:background-image 0.3s ease-out;}
+		div#homeSlider .wrapper ul > li span{margin-top:5px; display:block}
+		
+		div#homeSlider .wrapper ul > li:hover,div#homeSlider .wrapper ul > li.active{color:#ee8b03;}
+		div#homeSlider .wrapper ul > li:hover > .num,div#homeSlider .wrapper ul > li.active > .num{background-image:url(../_img/bg_num_on.png);}
+			
+		/*
+		div#homeSlider .bulle{background:url(../_img/bulleHomeSlider.png) no-repeat center; width:252px; height:209px; position:absolute; right:60px; top:20px; color:#FFF; text-align:center; box-sizing:border-box;-moz-box-sizing:border-box; line-height:200px;padding:0 20px 0 60px;  }
+		div#homeSlider .bulle > p{display:inline-block; vertical-align:middle;line-height:1.3em}
+		div#homeSlider .bulle strong, div#homeSlider .bulle span{display:block; }
+		div#homeSlider .bulle strong{font-size:18px;}
+		div#homeSlider .bulle > .icon{width:60px; height:60px;position:absolute;  background:#ed5802; border-radius:60px; top:0px; right:0px; line-height:normal}
+		div#homeSlider .bulle > .icon > img{display:none;position:relative;}
+		div#homeSlider .bulle a{display:block; font-size:13px;}
+		*/
+		div#homeSlider .bulle{background:url(../_img/bulleHomeSlider.png) no-repeat center; width:252px; height:209px; position:absolute; right:60px; top:20px; color:#FFF; text-align:center; box-sizing:border-box;-moz-box-sizing:border-box; padding:40px 20px 10px 60px;}
+		div#homeSlider .bulle strong, div#homeSlider .bulle span{display:block; line-height:1.3em}
+		div#homeSlider .bulle strong{font-size:18px;}
+		div#homeSlider .bulle > .icon{width:60px; height:60px;position:absolute;  background:#ed5802; border-radius:60px; top:0px; right:0px;}
+		div#homeSlider .bulle > .icon > img{display:none}
+		div#homeSlider .bulle a{display:block; font-size:13px;}
+
+		
+			div#homeSlider .bulle a.btn-sli{display:inline-block; background:url(../_img/bg_btn_ins.png) no-repeat right; padding:0 30px 0 10px; color:#ec8600; height:26px; line-height:26px; vertical-align:middle; border-radius:4px; font-size:13px; text-transform:uppercase; margin:15px auto 10px auto;}
+			
+			
+div#homeFooter .wrapper{ width:100%; max-width:900px; margin:0 auto; padding:0.5%; box-sizing:border-box;-moz-box-sizing:border-box; color:#6f6b6b; overflow:hidden}
+	
+	ul#homeFooterList {width:72%;padding:2% 1%; overflow:hidden; float:left;box-sizing:border-box;-moz-box-sizing:border-box;}
+	ul#homeFooterList > li {width:48%; font-size:0.713em;  display:block;float:left;}
+	ul#homeFooterList > li + li{margin-left:1%;}
+	ul#homeFooterList div.thumbList {width:38%; outline:solid 1px #dbdbdb; line-height:0; margin-bottom:1%; margin-right:2%; position:relative; float:left;}
+	ul#homeFooterList div.thumbList > img {width:100%; height:auto}
+	ul#homeFooterList div.textList {line-height:1.3em; width:60%; float: right;}
+	ul#homeFooterList > li h2 {font-size:1.875em; font-weight:700; color:#3198cc; margin-bottom:3%; text-transform:uppercase}
+	ul#homeFooterList div.textListCont > h3 {font-size:1.1em; font-weight:700}
+	ul#homeFooterList div.textListCont > p {font-size:1em; line-height:1.1em}
+	ul#homeFooterList div.textListCont > a {color:#3198cc; display:block; margin-top:1.5%}
+	ul#homeFooterList div.dateList {color:#3198cc; margin-bottom:1%; font-size:1.2em}
+div#homeFooter div.themeActu {background: #ff6d24; color: #FFF; line-height: normal; padding: 0.51% 1.5%; font-size: 1em; display: inline-block; margin-right:1em; text-transform:uppercase; margin-bottom:0.5em}
+
+	div#encartInstallateur{width:27%; float:left;padding:2% 0 2% 2%; min-height:183px; background:url(../_img/ombre_homefooter.png) no-repeat left center; box-sizing:border-box;-moz-box-sizing:border-box;}
+		div#encartInstallateur h3{font-size:1.2em; color:#3198cc; font-weight:600; text-align:center; margin-bottom:2%; }
+		div#encartInstallateur div.imgHolder{float:left; width:100px; }
+		div#encartInstallateur div.textHolder{margin-left:110px; font-size:0.715em; padding-top:5%; text-align:left}
+		div#encartInstallateur div.textHolder a{display:block; font-size:0.715em; float:right; }
+		
+			div#encartInstallateur div.textHolder a.btn-decouvrir{display:inline-block; background:url(../_img/bg_btn_ins2.png) no-repeat right; padding:0 30px 0 10px; color:#3198cc; height:26px; line-height:26px; vertical-align:middle; border-radius:4px; font-size:13px; text-transform:uppercase; margin:15px auto 10px auto;}
+			
+div#ficheClientRight {float:right; width:55%; margin:2% 0 2% 1%}
+div#ficheClientLeft {float:left; width:35%;  margin:2% 1% 2% 0}
+div.blockProjet {width:45%; float:left; margin-right:2.5%}
+div.blockProjet+div.blockProjet { margin-left:2.5%}
+
+div#clients.ficheClient div.statutClient {width:auto}
+div#clients.ficheClient div.statutFicheClient > ul li {margin-top:0}
+div#clients.ficheClient div.statutFicheClient {float: left; width: 50%;}
+
+nav#nav-wrap li span {display:block; height:15px}
+nav#nav-wrap li span.number {height:32px; width:32px; background:#ed8600; color:#FFF; font-weight:700; display:inline-block; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; line-height:32px; font-size:1.2em; display:none; margin:auto;}
+
+nav#nav-wrap li:hover div.thumbMenu img, nav#nav-wrap li.active div.thumbMenu img {display:none}
+nav#nav-wrap.public li:hover div.thumbMenu img {display:block}
+nav#nav-wrap li:hover div.thumbMenu span.number, nav#nav-wrap li.active div.thumbMenu span.number {display:block}
+
+div.demande {margin:0 0 2% 0; width:96%}
+div.resultat div.input {width:10%; float:right;}
+
+div#blocPartenaire {color:#6f6b6b; padding:4% 0;}
+div#blocPartenaire div.imgLeft {float:left; margin-right:2%; display:block}
+div#blocPartenaire div.logoPartenaire{float:none; margin-right:0; margin-bottom:0.5em}
+div#blocPartenaire div.blkRight {float:right; width:63%}
+div#blocPartenaire div.blkRight.nl {float:right; width:100%}
+div#orangePart {padding:2%}
+div#orangePart ul {text-align:center;}
+/*div#orangePart li {display:inline-block; margin:0}
+div#orangePart li+li  {margin:0 2%}
+div#orangePart li+li+li {margin:0}*/
+
+div#orangePart ul {display:table}
+div#orangePart li {display:table-cell; padding:0 2%; width:29.33333333333%}
+
+
+a.bttBleu {padding:0.8% 1%}
+a.bttBleu img {margin-bottom: -0.3em;}
+
+div.blockLeft {padding:1.5%}
+div.blockRightPartenaire {padding:3% 3.5%}
+div.blockLeft {float:left}
+div.blockLeft {width:57%}
+div.blockLeft.nl {width: 46%; font-size:0.75em; min-height:75px}
+div.blockLeft.nl+div.blockLeft.nl  {margin-left: 2%; font-size:0.875em; }
+div.blockright.nl {width:100%}
+div.blockright {width: 38%; margin-left: 2%; float: right;}
+div#contentPage {padding-top:5%}
+div#installateurWrapper .chapeau {line-height:1.25em}
+div.input.lost {width:22%}
+
+ul#list.formationListe {width: 73%; float:left}
+ul#list.formationListe > li {width: 48%;}
+ul#list.formationListe > li.formationUne {width:100%; position:relative; margin-bottom:1em}
+ul#list.formationListe > li.formationUne div.textList {position:absolute; bottom:0.5em; right:0; width:30%}
+ul#list.formationListe > li.formationUne div.thumbList {width:68%; }
+ul#list.formationListe > li h2 {float:left}
+
+nav#nav-wrap li strong {font-size:0.875em}
+
+div#lang{font-size:0.875em; color:#3198cc; top:1em; position:absolute; left:-3.5em; right:auto}
+
+div#contentTxt.doubleCol {
+-moz-column-count:2; -webkit-column-count:2; -o-column-count:2; column-count:2; -moz-column-gap:38px; -webkit-column-gap:38px; -o-column-gap:38px; column-gap:38px; margin-bottom:2em
+}
+
+div#contentHomePart ul li:hover a > div.blocIco {display:none;}
+div#contentHomePart ul li:hover a > div.hoverIco {display:block;}
+
+
+#content .encart div.input.cp_uk input[type="text"] {width:43%; padding: 0% 3%;}
+
+#step1 .inputs div.input.cp_uk input[type="text"]#cp1 , #step1 .inputs div.input.cp_uk input[type="text"]#cp2{width:48%; padding: 0% 3%;}
+#step1 .inputs div.input.cp_uk input[type="text"]#cp2 {margin-left:4%}
+
+#step1 div.zipcode small {font-size: 13px;}
+#step1 div.zipcode.add i {color: #3198cc;}
+
+
+#content div.input.cp_uk small {font-size: 13px; margin-bottom: 10px; margin-top: -10px; display:block; text-align:left}
+#content div.input.cp_uk i {background-color: #fa9702; color:#FFF; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding:0 5px; font-style: normal;}
+
+div.middle {width:48%; margin-right:1%; float:left}
+div.middle+div.middle {margin-right:0; margin-left:1%}
+
+div.blocDevis div.input.inclinaison {width: 26%;}
+div.blocDevis div.input.surface {width: 25%;}
+div.blocDevis div.input.echeance {width:45%}
+
+
+div.maintenanceBlockRight {width:46%; float:left; margin:0 0 40px 0; line-height:24px; margin:0}
+div.maintenanceBlockLeft {width:48%; float:left; margin:0 2% 40px 0; line-height:24px;}
+div#installateurs ul li+li.blockEcrire {margin-top:0}
+
+div.estimation div.input.nl, div.valorisation div.input.nl, div.emissions div.input.nl, div.arbres div.input.nl, div.confirmation div.input.nl {width:40%}
+div.estimation div.input > span.nl, div.valorisation div.input > span.nl, div.emissions div.input > span.nl, div.arbres div.input > span.nl, div.confirmation div.input > span.nl {width:25%}
+div.arbres div.input > span.nl {width: 26.5%;}
+
+
+#content .encart.eng {margin-top:7.2%}
+#content .encart.installateur.eng, #content .encart.demandeDevis.eng {padding: 3.9% 2%;}
+
+}
+
+@media screen and (max-width: 980px) {
+div#chercherInstall button {
+padding: 0 30px 0 10px;
+}
+}
+
+@media screen and (min-width: 1100px) {
+div#headerWrapper, nav#nav-wrap, div.bluePartWrapper, div#footerWrapper, div#content, div#navEtapes {width:1100px; margin:auto; position:relative; /*z-index: 1;*/}
+nav#nav-wrap li {display: inline-block; font-size: 0.7em; padding: 0;  width: 10.5%; border: none; background: none; text-align: center;}
+div#userWrapper nav#nav-wrap li {display:inline-block; font-size:0.805em; padding:0 3.2% 0 0.8%; width:auto; border: none; background:none;}
+
+#content .encart.eng {margin-top:7.3%}
+
+div.thumbMenu img {width:33px; height:auto;}
+nav#nav-wrap {margin:2.5% auto 1.5% auto}
+
+div#userWrapper nav#nav-wrap {margin:4.5% auto 1.5% auto}
+
+div#blocProjets {margin: -38px 0 20px 0;}
+div.informations > a, div.informations.creation > a {float:right; margin:0}
+/*div.generer {width: 20%;}*/
+/*div.informations, div.description, div.informations.creation {float:left; height: 250px;}*/
+div.informations.creation, div.description.creation {height:auto;}
+div.imgbluePart {top:-25px;}
+div.telClient {font-size:1em}
+div#netstore div.thumbNetstore { padding-right: 5%; margin-right: 5%;}
+div#netstore {font-size: 0.685em;}
+
+div#sidebarList {margin:2em 8% 0 2%;}
+
+div#bienvenue {font-size: 1.425em; margin:0;}
+div#bienvenue.deco {padding-bottom: 1.8em;}
+
+#content .encart > h2{font-weight:bold; font-size:1.2em;}
+	div#homeSlider .wrapper{width: 980px; margin:0 auto; height:370px; text-align:center; position:relative}
+
+
+div#homeFooter .wrapper{ width:100%; max-width:1100px; margin:0 auto; padding:0.5%; box-sizing:border-box;-moz-box-sizing:border-box; color:#6f6b6b}
+	ul#homeFooterList div.thumbList {width:38%; outline:solid 1px #dbdbdb; line-height:0; margin-bottom:1%; margin-right:2%; position:relative; float:left;}
+	ul#homeFooterList div.textList {line-height:1.3em; width:60%; float: right;}
+
+div#userWrapper nav#nav-wrap ul {/*text-align:center; margin-left:20%;*/ margin-top:0%}
+
+div#sidebarList.form {margin: 4em 8% 4em 2%;}
+
+nav#nav-wrap li strong {font-size:1.1em}
+div#blueBandWrapper {width: 1100px; margin: auto;}
+
+div.estimation div.input.nl {width:29%}
+div.valorisation div.input.nl {width:29%}
+div.emissions div.input.nl {width:29%}
+div.arbres div.input.nl {width:30%}
+div.confirmation div.input.nl {width:30%}
+
+
+#content .encart.eng {margin-top:7.2%}
+#content .encart.installateur.eng, #content .encart.demandeDevis.eng {padding: 3.7% 2%;}
+
+
+div#installateurs ul li div.logoInstal {width:8%}
+
+}
+
+div div.input > input.error, div div.select > select.error, div.informations.creation div.select.right > select.error, div.textarea > textarea.error {background: #f18080; -moz-box-shadow: 0px 0px 2px 1px #ff0000; -webkit-box-shadow: 0px 0px 2px 1px #ff0000; -o-box-shadow: 0px 0px 2px 1px #ff0000; box-shadow: 0px 0px 2px 1px #ff0000; filter:progid:DXImageTransform.Microsoft.Shadow(color=#ff0000, Direction=NaN, Strength=2);color: #FFF;}
+div.container {background:red; border: 1px solid red; padding: 1em; color:#FFF; text-align:center; margin-bottom:1em}
+div.container ol li {list-style-type: disc; margin-left: 20px; display: none!important}
+div.container {display: none}
+label.error {display: none;}
+
+
+.container label.error {display: inline;}
+input[type="radio"].error+label {background:red; padding:0 0.5em; -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;}
+
+
+div#contentPage a.bttBleu {color: #FFF; text-decoration: none; display: inline-block; width: auto; padding: 0 2%; height: 30px; line-height: 30px; margin-right: 5%;}
+div#contentPage a.bttBleu img {margin: 0; position: relative; margin-bottom: -6px; margin-left: 3px;}
+div#contentPage a.acces {color:#3198cc; background: #f8f8f8 url(../_img/bg_btn_ins2.png) no-repeat right center; color: #3198cc; line-height: 25px; padding: 0.5% 30px 0.5% 2%; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;  text-transform: uppercase; font-size: 0.875em; font-weight: 700; display:inline; border:none; font-family:'Dosis'; white-space:nowrap; cursor:pointer;  padding: 0.2% 30px 0.2% 2%; text-decoration:none}
+
+
+/******** AJOUTS POUR FORMULAIRES *******************/
+.required, .required-cgu, .required-civilite{-webkit-transition: all .2s ease-out; -moz-transition: all .2s ease-out; -o-transition: all .2s ease-out; transition: all .2s ease-out; }
+.required-error{border:1px red solid !important; background:#FFCCCC !important; }
+.required-cb-error{background-color:red !important;border-radius:5px;padding:0px 6px 3px 6px;}
+.required-message{color:red; text-align:center;}
+
