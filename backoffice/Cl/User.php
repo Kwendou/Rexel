@@ -315,7 +315,7 @@ class Cl_User
 				//$headers = "From: dmarlair@gmail.com";
 				//echo $to."<br>";
 				//mail($to, "Testing", $message, $headers);
-				//return true;
+				return true;
 			}
 		} else{
 			throw new Exception( FIELDS_MISSING );

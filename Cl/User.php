@@ -258,8 +258,10 @@ echo "</pre>";
 				$result = $bdd->prepare($sql); 
 				$result->execute(); 
 				$count = $result->fetchColumn(); 				
+				$session_id=$_SESSION['id'];
 				$_SESSION = $data;
 				$_SESSION['logged_in'] = true;
+				$_SESSION['id'] = $session_id;
 				if ($count == 0) {
 					$bdd->exec('INSERT INTO `user_login`.`sessions` (`CLUB`, `UTILISATEUR`, `DATEHEURELOGIN`, `INDEXLOGIN`) VALUES ('.$count.',2,Now(),12345)');
 				}
@@ -332,7 +334,7 @@ echo "</pre>";
 			$email = mysqli_real_escape_string( $this->_con, trim( $data['EMAIL'] ) );
 			
 			if((!$email) ) {
-				throw new Exception( FIELDS_MISSING );
+				throw new Exception( EMAIL_MISSING );
 			}
 			//$password = $this->randomPassword();
 			$password = "REXEL";
@@ -360,7 +362,7 @@ echo "</pre>";
 				//$headers = "From: dmarlair@gmail.com";
 				//echo $to."<br>";
 				//mail($to, "Testing", $message, $headers);
-				//return true;
+				
 			}
 		} else{
 			throw new Exception( FIELDS_MISSING );

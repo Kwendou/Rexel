@@ -50,7 +50,7 @@
 	</ul>
  </li>
  <li><a href="home_utilisateurs.php">Installateurs</a></li>
- <li><a href="home_aide.php">Aide</a></li>
+ <li><a href="../forget_password.php">Aide</a></li>
  <li><a href="../logout.php">Logout</a></li>
  </ul>
  <script>

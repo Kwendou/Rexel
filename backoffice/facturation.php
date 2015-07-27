@@ -1,5 +1,11 @@
 <?php
-	include "header.php";
+include "header.php";
+//session_start();
+//$_SESSION['id']=session_id();
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
+
 ?>
 <body>
 <div class="form-signin">

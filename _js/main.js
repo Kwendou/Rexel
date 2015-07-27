@@ -12,5 +12,6 @@ $(document).ready( function(){
         $(this).addClass('selected');
         $('.checkbox',parent).attr('checked', false);
     });
+
      
 });

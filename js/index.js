@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#forgetpassword-form").validate({
+	$("#login-form").validate({
 		submitHandler : function(e) {
 		    $(form).submit();
 		},

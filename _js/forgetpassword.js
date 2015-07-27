@@ -28,17 +28,12 @@ $(document).ready(function(){
 		}
 	});
 
-//////////////////////////////////////////////
-// Transférer E-MAIL à "forget_password.php //
-//////////////////////////////////////////////
+/////////////////////////////////////
+// Transférer E-MAIL à "index.php" //
+/////////////////////////////////////
 
 	
-	document.getElementById("email").onchange = email_change;
-
-
-	function email_change() {
-		
-		$("#forgotten_password_link").attr('href', 'forget_password.php?EMAIL='+$("#email").val());
-	}	
-	
+	$("#index_link").click(function() {
+		window.location='index.php?EMAIL='+$("#email").val();
+	});
 });

@@ -1,17 +1,7 @@
 <?php 
 ob_start();
-ob_start();
-$_SESSION=array();
-session_destroy();
-
-session_id('123456');
 session_start();
-$_SESSION['id']=session_id();
-
-
-$session_id = session_id();
-session_start();
-$_SESSION['id']=session_id();require_once 'config.php'; 
+require_once 'config.php'; 
 require_once 'templates/message.php';
 ?>
 <?php 
@@ -55,7 +45,7 @@ require_once 'templates/message.php';
                                    
 				<form id="login-form" method="post" class="form-signin" role="form" action="<?php echo $_SERVER['PHP_SELF']; ?>">  
 				
-                    <input name="email" id="email" type="email"  placeholder="Email address" value="<?php echo $_GET['email']; ?>">
+                    <input name="email" id="email" type="email"  placeholder="Email address">
                     <input name="password" id="password" type="password" placeholder="Password">
 					                   
                     <div class="log__language switch">
@@ -67,22 +57,20 @@ require_once 'templates/message.php';
                         
                     </div>
                     
-                    <a href="forget_password.php" id="forgotten_password_link">Forgotten password ? Follow me ...</a>
+                    <a href="forget_password.php">Forgotten password ? Follow me ...</a>
 					
                     <button type="submit">Dimensoning</button>
                     
                 </form>
 				
-		<a href="register.php"> Sign Up </a>
+				<a href="register.php"> Sign Up </a>
                     
             </div>
 
         </main>
     
     <script src="_js/Jquery.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
     <script src="_js/main.js"></script>
-    <script src="_js/index.js"></script>
     </body>
 </html>
 

@@ -8,7 +8,9 @@ define('USER_UPDATE_SUCCESS', 'Modifications enregistr&eacutees');
 define('USER_DELETE_SUCCESS', 'Utilisateur supprimé');
 define('USER_IS_RESPONSIBLE', 'L\'utilisateur que vous souhaitez supprimer est responsable d\'un ou de plusieurs clubs. Vous devrez attribuer un nouveau responsable pour ce(s) club(s) !');
 define('LOGIN_FIELDS_MISSING', 'Email ou mot de passe manquants');
+define('EMAIL_MISSING', 'Email manquant');
 define('LOGIN_FAIL', 'Email ou mot de passe incorrect');
 
 define('PASSWORD_CHANGE_SUCCESS', 'Le mot de passe a été modifié.');
-define('PASSWORD_RESET_SUCCESS', 'Le mot de passe a été réinitialisé.');
+define('PASSWORD_RESET_SUCCESS', 'Password has been resetted.');
+?>

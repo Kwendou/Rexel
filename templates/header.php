@@ -1,6 +1,9 @@
 <?php 
 ob_start();
-session_start();
+//$session_id = session_id();
+//session_start();
+//$_SESSION['id']=session_id();
+
 require_once 'config.php'; 
 if(!isset($_SESSION['logged_in'])){
 	header('Location: index.php');

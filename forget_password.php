@@ -1,6 +1,13 @@
-<?php require_once 'config.php'; ?>
+<?php require 'backoffice/config/config2.php';?>
 <?php 
+session_start();
+if(!empty($_GET)){
+	$email=$_GET['EMAIL'];
+}
+
 	if(!empty($_POST)){
+		$email=$_POST['EMAIL'];
+
 		if( !isset($_POST['ACTION']) ) {
 			try {
 				$user_obj = new Cl_User();
@@ -11,9 +18,9 @@
 			}
 		}
 	}
-//echo "<pre>";
-//print_r($_POST);
-//echo "</pre>";
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
 
 ?>
 <!DOCTYPE html>
@@ -26,46 +33,35 @@
 
     <title>Mot de passe oublié</title>
 
-    <!-- Bootstrap -->
-<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" type="text/css" href="_style/style.css">
-    <link rel="stylesheet" type="text/css" href="_style/reset.css">
+    	<link rel="stylesheet" type="text/css" href="_style/style.css">
+   	<link rel="stylesheet" type="text/css" href="_style/reset.css">
+	<script src="_js/Jquery.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
 	<div class="forgotPassword">
-		<?php require_once 'templates/ads.php';?>
 		<div class="login-form">
-		<img src="_img/RexelLogo.png" alt="Logo de la société Rexel">
+			<?php require_once 'templates/message.php';?>
+
+			<img src="_img/RexelLogo.png" alt="Logo de la société Rexel">
 			<h1 class="text-center">Rexel Multi-Energy</h1>
 			<div class="form-header">
 				<i class="fa fa-user"></i>
 			</div>
 			<form id="forgetpassword-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form-register" role="form">
 				<div>
-					<input id="email" name="EMAIL" type="email" class="form-control" placeholder="Adresse e-mail" value="<?php echo $_POST['EMAIL']; ?>">  
+					<input id="email" name="EMAIL" type="email" class="form-control" placeholder="Email address" value="<?php echo $email; ?>">  
 					<span class="help-block"></span>
 				</div>
-				<button class="btn btn-block bt-login" type="submit">Réinitialiser le mot de passe</button>
+				<button class="btn btn-block bt-login" type="submit">Reset password</button>
 			</form>
 			<div class="form-register annulForgot">
-			    <button class="btn btn-block bt-login" onClick="window.location='index.php'">Annuler</button>
+			    <button id="index_link" class="btn btn-block bt-login" >Back</button>
 			</div>
 		</div>
 	</div>
-	<!-- /container -->
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="_js/Jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--    <script src="js/bootstrap.min.js"></script>-->
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/forgetpassword.js"></script>
+    <script src="_js/forgetpassword.js"></script>
   </body>
 </html>

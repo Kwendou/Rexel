@@ -1,6 +1,12 @@
 <!doctype html>
-<?php require_once("menu.html"); ?>
+
+<?php 
+	require_once("menu.html"); 
+	session_start();
+
+?>
 <body><center>
+
 	<?php include("facturation.php"); ?>
 
 	<script>
